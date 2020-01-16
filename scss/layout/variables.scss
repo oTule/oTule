@@ -1,0 +1,64 @@
+/* colors */
+
+$black: #242226;
+
+/*fonts*/
+
+$didact: 'Didact Gothic', 'Comic Sans MS', 'Monaco' , cursive;
+$rnormal: 'Roboto', Arial, Helvetica, sans-serif;
+$yeseva:  'Yeseva One', 'Comic Sans MS', 'Monaco' , cursive;
+
+/*adaptive*/
+
+$small-desktop: 1360px;
+$laptop: 1100px;
+$tablets: 993px;
+$phones: 600px;
+$phones-small: 375px;
+
+@mixin small-desktop{
+	@media screen and (max-width: $small-desktop) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media screen and (max-width: $laptop) {
+		@content;
+	}
+}
+
+@mixin tablets{
+	@media screen and (max-width: $tablets) {
+		@content;
+	}
+}
+
+@mixin phones{
+	@media screen and (max-width: $phones) {
+		@content;
+	}
+}
+
+@mixin phones-small{
+	@media screen and (max-width: $phones-small) {
+		@content;
+	}
+}
+
+@mixin flexCenterCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexCenterSpaceBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@function rem($px){
+	@return $px / 16px + 0rem;
+}
