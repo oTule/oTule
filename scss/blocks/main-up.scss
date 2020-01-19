@@ -1,0 +1,41 @@
+.main-up {
+    padding-top: rem(30px);
+}
+
+.main-up__slide {
+    position: relative;
+    height: rem(534px);
+    background: center center / cover no-repeat;
+    color: #FFFFFF;
+}
+
+.main-up__slide-title {
+    position: absolute;
+    left: rem(30px);
+    top: rem(25px);
+    font-weight: normal;
+}
+
+.main-up__btn {
+    position: absolute;
+    right: rem(30px);
+    top: rem(30px);
+}
+
+.main-up__content {
+    position: absolute;
+    left: rem(30px);
+    bottom: rem(23px);
+    max-width: rem(350px);
+}
+
+.main-up__content-date {
+    margin-bottom: rem(20px);
+    font-family: $didact;
+    font-size: rem(24px);
+}
+
+.main-up__content-title {
+    margin-bottom: rem(20px);
+    font-weight: normal;
+}

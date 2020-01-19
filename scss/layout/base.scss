@@ -36,6 +36,7 @@ body {
     width: 100%;
     font-size: rem(18px);
     font-family: $didact;
+    background-color: $bgc-gray;
     &.fixed {
         overflow: hidden;
         width: 100%;
@@ -141,5 +142,24 @@ address {
     background-color: transparent;
     font-weight: bold;
     cursor: pointer;
-   
+   &.transparent-gray-border-btn {
+       line-height: rem(40px);
+       padding: 0 rem(50px);
+       border: 1px solid $border-gray;
+       border-radius: 5px;
+   }
+   &.gray-back-white-text-btn {
+       line-height: rem(40px);
+       padding: 0 rem(20px);
+       border-radius: 5px;
+       color:#FFFFFF;
+       background-color: $black;
+   }
+   &.red-hashtag-btn {
+       line-height: rem(28px);
+       padding: 0 rem(10px);
+       background-color: red;
+       border-radius: 3px;
+       color: #FFFFFF;
+   }
 }

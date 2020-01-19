@@ -1,0 +1,74 @@
+.header-down {
+    background-color: #FFFFFF;
+    color: $black;
+    padding: 9px 0;
+}
+
+.header-down__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-down__col {
+    display: flex;
+    align-items: center;
+}
+
+.header-down__logo {
+    width: rem(70px);
+    margin-right: rem(30px);
+}
+
+.header-down__calendar-link {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    &:before {
+        content: '';
+        width: rem(29px);
+        height: rem(29px);
+        margin-right: rem(10px);
+        background: url(../images/svg/icons/smallCalendar.svg) center center / contain no-repeat;
+    }
+}
+
+.header-down__menu {
+    display: flex;
+    align-items: center;
+}
+
+.header-down__menu-item {
+    margin-right: rem(47px);
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.header-down__menu-link {
+    color: inherit;
+}
+
+.header-down__search-form {
+    background-color: $bgc-gray;
+    border-radius: 5px;
+    padding: 9px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-right: rem(20px);
+}
+
+.header-down__search-input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.header-down__search-btn {
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    padding: 0;
+}
