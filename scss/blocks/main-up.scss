@@ -39,3 +39,29 @@
     margin-bottom: rem(20px);
     font-weight: normal;
 }
+
+.main-up__slider-wrapper {
+    position: relative;
+    .owl-dots {
+        display: none;
+    }
+}
+
+.main-up__slider-buttons {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.main-up__slider-counter {
+    position: absolute;
+    right: rem(28px);
+    bottom: rem(23px);
+    color: #FFFFFF;
+    font-size: rem(24px);
+    letter-spacing: 1px;
+}
