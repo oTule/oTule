@@ -1,0 +1,25 @@
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: rem(40px);
+}
+
+.section-head__col {
+    display: flex;
+    align-items: baseline;
+}
+
+.section-head__title {
+    margin-right: rem(30px);
+}
+
+.section-head__date {
+    color: $text-gray;
+    font-size: rem(24px);
+}
+
+.section-head__all-link {
+    color: $red;
+    text-decoration: underline;
+}
