@@ -1,0 +1,46 @@
+.banner-main {
+    background: center center / cover no-repeat;
+    min-height: rem(350px);
+    color: #FFFFFF;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+    }
+}
+
+.banner-main__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-main__link {
+    color: $red;
+    font-size: rem(24px);
+    text-decoration: underline;
+    margin-bottom: rem(11px);
+    display: block;
+    &:hover {
+        color: $red;
+    }
+}
+
+.banner-main__title {
+    margin-bottom: rem(13px);
+}
+
+.banner-main__desc {
+    max-width: rem(440px);
+    margin: 0 auto;
+    line-height: rem(24px);
+}

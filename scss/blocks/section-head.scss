@@ -23,3 +23,19 @@
     color: $red;
     text-decoration: underline;
 }
+
+.section-head__filter-link {
+    color: $text-another-gray;
+    text-decoration: underline;
+    transition: color .3s ease-out;
+    margin-right: rem(62px);
+    &.active {
+        color: $black;
+    }
+    &:hover {
+        color: $black;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}

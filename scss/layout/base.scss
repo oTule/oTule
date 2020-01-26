@@ -147,6 +147,7 @@ address {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .btn {
@@ -154,6 +155,7 @@ address {
     border: 0;
     background-color: transparent;
     font-weight: bold;
+    padding: 0;
     cursor: pointer;
     &:focus, &:active {
         outline: 0;
@@ -177,6 +179,22 @@ address {
        background-color: red;
        border-radius: 3px;
        color: #FFFFFF;
+   }
+   &.gray-btn {
+        line-height: rem(57px);
+        border: 1px solid $border-another-gray;
+        background-color: $bgc-gray;
+        padding: 0 rem(50px);
+   }
+   &.tag-white-btn {
+       line-height: rem(22px);
+       padding: 0 rem(12px);
+       border-radius: 5px;
+       border: 1px solid $border-another-gray;
+       margin-right: rem(15px);
+       margin-bottom: rem(10px);
+       color: $text-gray;
+       font-size: rem(15px);
    }
 }
 
