@@ -1,0 +1,125 @@
+.record-aside__card {
+    background-color: #FFFFFF;
+    border: 1px solid $border-another-gray;
+    border-radius: 5px;
+    padding: rem(19px) rem(30px) rem(23px) rem(31px);
+    margin-bottom: rem(20px);
+}
+
+.record-aside__title {
+    color: $text-gray;
+    margin-bottom: rem(20px);
+
+    &--red-dot {
+        &:before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $red;
+            display: inline-block;
+            margin-right: rem(12px);
+        }
+    }
+}
+
+.record-aside__tag-btn {
+    margin-right: rem(6px);
+    margin-bottom: rem(7px);
+}
+
+.record-aside__news-item {
+    display: flex;
+    margin-bottom: rem(21px);
+}
+
+.record-aside__news-preview {
+    width: rem(80px);
+    height: rem(80px);
+    overflow: hidden;
+    border-radius: 5px;
+    margin-right: rem(23px);
+    flex-shrink: 0;
+}
+
+.record-aside__news-comment {
+    padding-left: 1rem;
+}
+
+.record-aside__news-text {
+    line-height: rem(24px);
+}
+
+.record-aside__comment-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.record-aside__comment-item {
+    border-bottom: 1px dashed $border-gray;
+    margin-bottom: rem(22px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.record-aside__comment-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.record-aside__comment-name {
+    font-size: rem(14px);
+    font-weight: bold;
+}
+
+.record-aside__comment-time {
+    font-size: 10px;
+    color: $text-gray;
+}
+
+.record-aside__comment-text {
+    font-size: rem(14px);
+}
+
+.record-aside__comment-btn {
+    margin-bottom: rem(15px);
+}
+
+.record-aside__subscribe-text {
+    margin-bottom: rem(20px);
+}
+
+.record-aside__subscribe-form {
+    margin-bottom: rem(20px);
+    border: 1px solid $so-black;
+    border-radius: 5px;
+    display: flex;
+    overflow: hidden;
+}
+
+.record-aside__subscribe-submit {
+    background-color: $so-black;
+    border: 0;
+    color: #FFFFFF;
+    line-height: rem(47px);
+    padding: 0 rem(17px);
+    flex-shrink: 0;
+    border-radius: 0;
+    min-width: rem(135px);
+}
+
+.record-aside__subscribe-input {
+    padding: 0 rem(10px) 0 rem(18px);
+    max-width: rem(185px);
+
+    &::placeholder {
+        color: $so-black;
+    }
+}

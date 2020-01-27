@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -421,8 +422,6 @@ pre code {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
 
@@ -8362,6 +8361,50 @@ address {
     margin-bottom: 0.625rem;
     color: #7C7C7C;
     font-size: 0.9375rem; }
+  .btn.tag-md-btn {
+    font-size: 1.25rem;
+    font-weight: normal;
+    color: #7C7C7C;
+    background-color: #F7F7F7;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    line-height: 2.125rem;
+    padding: 0 0.8125rem;
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out; }
+    .btn.tag-md-btn.active, .btn.tag-md-btn:hover {
+      background-color: #242226;
+      color: #FFFFFF; }
+  .btn.comment-btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #F51212; }
+    .btn.comment-btn:before {
+      content: '';
+      width: 1.0625rem;
+      height: 1.0625rem;
+      margin-right: 5px;
+      display: block;
+      background: url(../images/svg/icons/comments.svg) center center/contain no-repeat; }
+  .btn.comment-text-btn {
+    color: #F51212;
+    font-size: 0.625rem;
+    font-weight: normal;
+    font-family: "Yeseva One", "Comic Sans MS", "Monaco", cursive;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .btn.comment-text-btn:before {
+      content: '⮩';
+      font-size: 1.625rem; }
 
 .owl-carousel .owl-stage-outer {
   overflow: hidden; }
@@ -8950,4 +8993,147 @@ address {
   line-height: 3.4375rem; }
 
 .records__content {
-  width: 68%; }
+  width: 66%; }
+
+.records__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.records__aside {
+  width: 32.5%; }
+
+.records__aside-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 5px;
+  padding: 1.1875rem 1.875rem 1.4375rem 1.9375rem;
+  margin-bottom: 1.25rem; }
+
+.records__aside-title {
+  color: #7C7C7C;
+  margin-bottom: 1.25rem; }
+
+.records__tags-btn {
+  margin-right: 0.375rem;
+  margin-bottom: 0.4375rem; }
+
+.record-aside__card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 5px;
+  padding: 1.1875rem 1.875rem 1.4375rem 1.9375rem;
+  margin-bottom: 1.25rem; }
+
+.record-aside__title {
+  color: #7C7C7C;
+  margin-bottom: 1.25rem; }
+  .record-aside__title--red-dot:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #F51212;
+    display: inline-block;
+    margin-right: 0.75rem; }
+
+.record-aside__tag-btn {
+  margin-right: 0.375rem;
+  margin-bottom: 0.4375rem; }
+
+.record-aside__news-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.3125rem; }
+
+.record-aside__news-preview {
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-right: 1.4375rem;
+  -ms-flex-negative: 0;
+  flex-shrink: 0; }
+
+.record-aside__news-comment {
+  padding-left: 1rem; }
+
+.record-aside__news-text {
+  line-height: 1.5rem; }
+
+.record-aside__comment-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px; }
+
+.record-aside__comment-item {
+  border-bottom: 1px dashed #C4C4C4;
+  margin-bottom: 1.375rem; }
+  .record-aside__comment-item:last-child {
+    margin-bottom: 0; }
+
+.record-aside__comment-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: 10px; }
+
+.record-aside__comment-name {
+  font-size: 0.875rem;
+  font-weight: bold; }
+
+.record-aside__comment-time {
+  font-size: 10px;
+  color: #7C7C7C; }
+
+.record-aside__comment-text {
+  font-size: 0.875rem; }
+
+.record-aside__comment-btn {
+  margin-bottom: 0.9375rem; }
+
+.record-aside__subscribe-text {
+  margin-bottom: 1.25rem; }
+
+.record-aside__subscribe-form {
+  margin-bottom: 1.25rem;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden; }
+
+.record-aside__subscribe-submit {
+  background-color: #000000;
+  border: 0;
+  color: #FFFFFF;
+  line-height: 2.9375rem;
+  padding: 0 1.0625rem;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 0;
+  min-width: 8.4375rem; }
+
+.record-aside__subscribe-input {
+  padding: 0 0.625rem 0 1.125rem;
+  max-width: 11.5625rem; }
+  .record-aside__subscribe-input::-webkit-input-placeholder {
+    color: #000000; }
+  .record-aside__subscribe-input:-ms-input-placeholder {
+    color: #000000; }
+  .record-aside__subscribe-input::-ms-input-placeholder {
+    color: #000000; }
+  .record-aside__subscribe-input::placeholder {
+    color: #000000; }
