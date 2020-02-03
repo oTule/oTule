@@ -57,6 +57,14 @@
     transform: translateY(-50%);
 }
 
+.main-up__slider-prev {
+    padding-left: rem(30px);
+}
+
+.main-up__slider-next {
+    padding-right: rem(30px);
+}
+
 .main-up__slider-counter {
     position: absolute;
     right: rem(28px);
