@@ -1,0 +1,24 @@
+.news-big__cover {
+    height: rem(357px);
+    margin-bottom: rem(26px);
+    overflow: hidden;
+}
+
+.news-big__title {
+    font-family: $yeseva;
+    font-size: rem(24px);
+    margin-bottom: 8px;
+}
+
+.news-big__footer {
+    color: $border-gray;
+    display: flex;
+    align-items: center;
+}
+
+.news-big__socials {
+    &:before {
+        width: 18px;
+        height: 18px;
+    }
+}

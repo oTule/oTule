@@ -1,0 +1,66 @@
+.social-button{
+    display: flex;
+    align-items: center;
+    color: $border-gray;
+    margin-right: rem(20px);
+
+    &:before {
+        content: '';
+        margin-right: rem(14px);
+        width: rem(29px);
+        height: rem(29px);
+        background: center center / contain no-repeat;
+    }
+
+    &:hover {
+        color: $border-gray;
+        text-decoration: none;
+    }
+}
+
+.social-button__comments:before {
+    background-image: url(../images/svg/icons/comments.svg);
+}
+
+.social-button__repost:before {
+    background-image: url(../images/svg/icons/share.svg);
+}
+
+.social-button__star:before {
+    background-image: url(../images/svg/icons/star.svg);
+}
+
+.social-button__views:before {
+    background-image: url(../images/svg/icons/views.svg);
+}
+
+.social-button__like:before {
+    background-image: url(../images/svg/icons/like.svg);
+}
+
+.social-button__dislike:before {
+    background-image: url(../images/svg/icons/dislike.svg);
+}
+
+
+.social-button__views {
+    margin-right: rem(35px);
+}
+
+.social-button__dislike {
+    margin-right: 0;
+    &:before {
+        margin-right: rem(10px);
+    }
+}
+
+.social-button__like {
+    margin-right: 0;
+    &:before {
+        margin-right: 0;
+    }
+}
+
+.record__rating {
+    margin-right: rem(10px);
+}
