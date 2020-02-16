@@ -42,6 +42,14 @@
     background-image: url(../images/svg/icons/dislike.svg);
 }
 
+.social-button__rating-down:before {
+    background-image: url(../images/svg/icons/rating-down.svg);
+}
+
+.social-button__rating-up:before {
+    background-image: url(../images/svg/icons/rating-up.svg);
+}
+
 
 .social-button__views {
     margin-right: rem(35px);

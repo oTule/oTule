@@ -1,0 +1,98 @@
+.comment-message {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid $border-another-gray;
+    padding: rem(18px) rem(26px) rem(20px) rem(23px);
+    margin-bottom: rem(20px);
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &--answer {
+        // &:nth-child(1) {
+        //     &::before {
+        //         content: '';
+        //         background: url(../images/svg/icons/minus-button.svg) center center / contain no-repeat;
+        //         width: 15px;
+        //         height: 15px;
+        //         display: block;
+        //         position: absolute;
+        //         left: -5%;
+        //         top: 0;
+        //     }
+        // }
+        // &:after {
+        //     content: '';
+        //     width: 1px;
+        //     height: 100%;
+        //     display: block;
+        //     position: absolute;
+        //     top: 0;
+        //     left: -4%;
+        //     background-color: $red; 
+        // }
+    }
+}
+
+.comment-message__head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.comment-message__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-right: rem(17px);
+}
+
+.comment-message__author-name {
+    font-size: rem(16px);
+    line-height: rem(21px);
+}
+
+.comments-message__date {
+    font-size: rem(12px);
+    line-height: rem(16px);
+}
+
+.comment-message__body {
+    padding-bottom: rem(15px);
+    border-bottom: 1px dashed $border-gray;
+    margin-bottom: rem(15px);
+}
+
+.comment-message__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comment-message__answer {
+    color: $red;
+    &:hover {
+        color: $red;
+        text-decoration: underline;
+    }
+}
+
+.comment-message__social-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.comment-message__social-button {
+    margin-right: 10px;
+    &:before {
+        margin-right: 0;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.comment-message__rating {
+    margin-right: 10px;
+}

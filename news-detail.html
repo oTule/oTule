@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-up">
+                <div class="container header-up__container">
+                    <nav class="header-up__nav">
+                        <ul class="header-up__menu">
+                            <li class="header-up__menu-item">
+                                <a href="#" class="header-up__menu-link">О портале</a>
+                            </li>
+                            <li class="header-up__menu-item">
+                                <a href="#" class="header-up__menu-link">Рекламодателям</a>
+                            </li>
+                            <li class="header-up__menu-item">
+                                <a href="#" class="header-up__menu-link">Письмо редакции</a>
+                            </li>
+                            <li class="header-up__menu-item">
+                                <a href="styles.html" class="header-up__menu-link">!стили\типографика\иконки!</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="btn header-up__auth js-authPopup">
+                        Авторизоваться
+                    </button>
+                </div>
+            </div>
+            <div class="header-down">
+                <div class="container header-down__container">
+                    <div class="header-down__col">
+                        <a href="/" class="header-down__logo">
+                            <img src="images/svg/icons/logoBlack.svg" alt="" class="img-fluid">
+                        </a>
+                        <div class="header-down__calendar-btn">
+                            <a href="#" class="header-down__calendar-link">Календарь событий</a>
+                        </div>
+                    </div>
+                    <div class="header-down__col">
+                        <nav class="header-down__nav">
+                            <ul class="header-down__menu">
+                                <li class="header-down__menu-item">
+                                    <a href="news-index.html" class="header-down__menu-link">Новости</a>
+                                </li>
+                                <li class="header-down__menu-item">
+                                    <a href="#" class="header-down__menu-link">Статьи и блоги</a>
+                                </li>
+                                <li class="header-down__menu-item">
+                                    <a href="#" class="header-down__menu-link">Справочная</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header-down__col">
+                        <form action="" class="header-down__search-form">
+                            <input type="text" class="header-down__search-input">
+                            <button class="btn header-down__search-btn"><img src="images/svg/icons/search.svg" alt=""
+                                    class="img-fluid"></button>
+                        </form>
+                        <button type="button" class="header-down__posting-btn btn transparent-gray-border-btn">
+                            Запостить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="page-content inner__page-content">
+            <section class="section news-detail">
+                <div class="container news-detail__container">
+                    <div class="row news-detail__row">
+                        <div class="col-lg-8 news-detail__big-col">
+                            <div class="news-detail__content">
+                                <div class="news-detail__date">16 июля 2018, <span
+                                        class="news-detail__date--red">10:04</span></div>
+                                <h1 class="news-detail__main-title">Жрем и худеем, как сожрать семью из 7 мышей и не
+                                    раздобреть, разбирамся вместе</h1>
+                                <div class="news-detail__photo">
+                                    <img src="images/news-detail/cover.png" alt="" class="img-cover">
+                                </div>
+                                <div class="news-detail__text-content">
+                                    <p>Об этом сообщил «Интерфаксу» назначенный сегодня на должность главы Совета
+                                        Валерий Фадеев. По его словам, он намерен поставить вопрос перед
+                                        правоохранительными органами, почему они не реагируют на обращения потерпевших
+                                        на прошедших летом несогласованных акциях.</p>
+                                    <p>Сегодня президент Владимир Путин отправил в отставку главу Совета по правам
+                                        человека Михаила Федотова, занимавшего это пост с 2010 года. Кроме того, из
+                                        состава СПЧ исключены политолог Екатерина Шульман, глава правозащитной группы
+                                        «Агора» Павел Чиков и профессор Высшей школы экономики Илья Шаблинский.
+                                        Одновременно в его состав включены исполнительный директор «России сегодня»
+                                        Кирилл Вышинский, свердловский омбудсмен Татьяна Мерзлякова и еще несколько
+                                        человек.</p>
+                                </div>
+                                <div class="news-detail__socials">
+                                    <div class="news-detail__author"><span
+                                            class="news-detail__author-static">Автор:</span> Георгий Тадтаев</div>
+                                    <div class="news-detail__socials-buttons">
+                                        <a href="#"
+                                            class="news-detail__socials-button social-button social-button__views">
+                                            1535
+                                        </a>
+                                        <a href="#"
+                                            class="news-detail__socials-button social-button social-button__comments">
+                                            24
+                                        </a>
+                                        <a href="#"
+                                            class="news-detail__socials-button social-button social-button__repost">
+                                            7
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-detail__comments comments">
+                                <div class="comments__auth-message">
+                                    <div class="comments__auth-title">Комментарии</div>
+                                    <div class="comments__auth-variants">
+                                        Пожалуйста, <a href="#" class="comments__auth-variant">авторизуйтесь</a> или <a
+                                            href="#" class="comments__auth-variant">зарегистрируйтесь</a>, чтобы
+                                        оставить комментарий.
+                                    </div>
+                                </div>
+                                <div class="comments__messages">
+                                    <div class="comments__message comment-message">
+                                        <div class="comment-message__head">
+                                            <div class="comment-message__avatar">
+                                                <img src="images/comments/ava1.png" alt="" class="img-cover">
+                                            </div>
+                                            <div class="comment-message__information">
+                                                <div class="comment-message__author-name">Хитрый жук</div>
+                                                <div class="comments-message__date">минуту назад</div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-message__body">Отличная идея, давно так делаю и другим
+                                            советую. Сами только задумайтесь, сколько проблем можно избежать, следуюя
+                                            этим ростым жизненым советамм! Представили?! Тогда вперед жрать слонов, а то
+                                            разожрались все впоследнее время, то аж сил нет, как есть хочется.</div>
+                                        <div class="comment-message__footer">
+                                            <a href="#" class="comment-message__answer">Ответить</a>
+                                            <div class="comment-message__social-buttons">
+                                                <a href="#"
+                                                    class="comment-message__social-button social-button social-button__rating-down"></a>
+                                                <div class="comment-message__rating">53</div>
+                                                <a href="#"
+                                                    class="comment-message__social-button social-button social-button__rating-up"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comments__answers-wrap">
+                                        <a href="#" class="comment__answers-close">
+
+                                        </a>
+                                        <div class="comments__answers">
+                                            <div class="comment__message comment-message comment-message--answer">
+                                                <div class="comment-message__head">
+                                                    <div class="comment-message__avatar">
+                                                        <img src="images/comments/ava1.png" alt="" class="img-cover">
+                                                    </div>
+                                                    <div class="comment-message__information">
+                                                        <div class="comment-message__author-name">Хитрый жук</div>
+                                                        <div class="comments-message__date">минуту назад</div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-message__body">Отличная идея, давно так делаю и
+                                                    другим
+                                                    советую. Сами только задумайтесь, сколько проблем можно избежать,
+                                                    следуюя
+                                                    этим ростым жизненым советамм! Представили?! Тогда вперед жрать
+                                                    слонов,
+                                                    а то
+                                                    разожрались все впоследнее время, то аж сил нет, как есть хочется.
+                                                </div>
+                                                <div class="comment-message__footer">
+                                                    <a href="#" class="comment-message__answer">Ответить</a>
+                                                    <div class="comment-message__social-buttons">
+                                                        <a href="#"
+                                                            class="comment-message__social-button social-button social-button__rating-down"></a>
+                                                        <div class="comment-message__rating">53</div>
+                                                        <a href="#"
+                                                            class="comment-message__social-button social-button social-button__rating-up"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comment__message comment-message comment-message--answer">
+                                                <div class="comment-message__head">
+                                                    <div class="comment-message__avatar">
+                                                        <img src="images/comments/ava1.png" alt="" class="img-cover">
+                                                    </div>
+                                                    <div class="comment-message__information">
+                                                        <div class="comment-message__author-name">Хитрый жук</div>
+                                                        <div class="comments-message__date">минуту назад</div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-message__body">Отличная идея, давно так делаю и
+                                                    другим
+                                                    советую. Сами только задумайтесь, сколько проблем можно избежать,
+                                                    следуюя
+                                                    этим ростым жизненым советамм! Представили?! Тогда вперед жрать
+                                                    слонов,
+                                                    а то
+                                                    разожрались все впоследнее время, то аж сил нет, как есть хочется.
+                                                </div>
+                                                <div class="comment-message__footer">
+                                                    <a href="#" class="comment-message__answer">Ответить</a>
+                                                    <div class="comment-message__social-buttons">
+                                                        <a href="#"
+                                                            class="comment-message__social-button social-button social-button__rating-down"></a>
+                                                        <div class="comment-message__rating">53</div>
+                                                        <a href="#"
+                                                            class="comment-message__social-button social-button social-button__rating-up"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comments__message comment-message">
+                                        <div class="comment-message__head">
+                                            <div class="comment-message__avatar">
+                                                <img src="images/comments/ava1.png" alt="" class="img-cover">
+                                            </div>
+                                            <div class="comment-message__information">
+                                                <div class="comment-message__author-name">Хитрый жук</div>
+                                                <div class="comments-message__date">минуту назад</div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-message__body">Отличная идея, давно так делаю и другим
+                                            советую. Сами только задумайтесь, сколько проблем можно избежать, следуюя
+                                            этим ростым жизненым советамм! Представили?! Тогда вперед жрать слонов, а то
+                                            разожрались все впоследнее время, то аж сил нет, как есть хочется.</div>
+                                        <div class="comment-message__footer">
+                                            <a href="#" class="comment-message__answer">Ответить</a>
+                                            <div class="comment-message__social-buttons">
+                                                <a href="#"
+                                                    class="comment-message__social-button social-button social-button__rating-down"></a>
+                                                <div class="comment-message__rating">53</div>
+                                                <a href="#"
+                                                    class="comment-message__social-button social-button social-button__rating-up"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                        </div>
+                        <aside class="col-lg-4 news-detail__small-col">
+                            <div class="news-detail__aside-content">
+                                <div class="news-detail__aside-title">
+                                    Самые обсуждаемые новости
+                                </div>
+                                <div class="news-detail__aside-items">
+                                    <a href="#" class="news-detail__aside-item">
+                                        <div class="news-detail__aside-announcement">Сбербанк рассказал о ставках по
+                                            ипотеке
+                                            от 1%</div>
+                                        <div class="news-detail__aside-buttons">
+                                            <button
+                                                class="btn social-button social-button__comments news-detail__aside-button">
+                                                24
+                                            </button>
+                                            <div class="news-detail__aside-date">| 16 июля 2018, 10:04</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-detail__aside-item">
+                                        <div class="news-detail__aside-announcement">Бывший участник КВН стал советником
+                                            Совбеза Украины</div>
+                                        <div class="news-detail__aside-buttons">
+                                            <button
+                                                class="btn social-button social-button__comments news-detail__aside-button">
+                                                24
+                                            </button>
+                                            <div class="news-detail__aside-date">| 16 июля 2018, 10:04</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-detail__aside-item">
+                                        <div class="news-detail__aside-announcement">В суде рассматривают дело экс-главы
+                                            тульского МЧС Ришата Нуртдинова</div>
+                                        <div class="news-detail__aside-buttons">
+                                            <button
+                                                class="btn social-button social-button__comments news-detail__aside-button">
+                                                24
+                                            </button>
+                                            <div class="news-detail__aside-date">| 16 июля 2018, 10:04</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-detail__aside-item">
+                                        <div class="news-detail__aside-announcement">Украинский минкульт извинился за
+                                            хор Веревки и «Квартал 95» </div>
+                                        <div class="news-detail__aside-buttons">
+                                            <button
+                                                class="btn social-button social-button__comments news-detail__aside-button">
+                                                24
+                                            </button>
+                                            <div class="news-detail__aside-date">| 16 июля 2018, 10:04</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-detail__aside-item">
+                                        <div class="news-detail__aside-announcement">В 2020 году в России могут поднять
+                                            минимальные цены на водку и коньяк. Ублюдки</div>
+                                        <div class="news-detail__aside-buttons">
+                                            <button
+                                                class="btn social-button social-button__comments news-detail__aside-button">
+                                                24
+                                            </button>
+                                            <div class="news-detail__aside-date">| 16 июля 2018, 10:04</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-detail__aside-item">
+                                        <div class="news-detail__aside-announcement">Сбербанк рассказал о ставках по
+                                            ипотеке от 1%</div>
+                                        <div class="news-detail__aside-buttons">
+                                            <button
+                                                class="btn social-button social-button__comments news-detail__aside-button">
+                                                24
+                                            </button>
+                                            <div class="news-detail__aside-date">| 16 июля 2018, 10:04</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-detail__aside-item">
+                                        <div class="news-detail__aside-announcement">Сбербанк рассказал о ставках по
+                                            ипотеке от 1%</div>
+                                        <div class="news-detail__aside-buttons">
+                                            <button
+                                                class="btn social-button social-button__comments news-detail__aside-button">
+                                                24
+                                            </button>
+                                            <div class="news-detail__aside-date">| 16 июля 2018, 10:04</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-detail__aside-item">
+                                        <div class="news-detail__aside-announcement">Сбербанк рассказал о ставках по
+                                            ипотеке
+                                            от 1%</div>
+                                        <div class="news-detail__aside-buttons">
+                                            <button
+                                                class="btn social-button social-button__comments news-detail__aside-button">
+                                                24
+                                            </button>
+                                            <div class="news-detail__aside-date">| 16 июля 2018, 10:04</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-detail__aside-item">
+                                        <div class="news-detail__aside-announcement">Бывший участник КВН стал советником
+                                            Совбеза Украины</div>
+                                        <div class="news-detail__aside-buttons">
+                                            <button
+                                                class="btn social-button social-button__comments news-detail__aside-button">
+                                                24
+                                            </button>
+                                            <div class="news-detail__aside-date">| 16 июля 2018, 10:04</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-detail__aside-item">
+                                        <div class="news-detail__aside-announcement">В суде рассматривают дело экс-главы
+                                            тульского МЧС Ришата Нуртдинова</div>
+                                        <div class="news-detail__aside-buttons">
+                                            <button
+                                                class="btn social-button social-button__comments news-detail__aside-button">
+                                                24
+                                            </button>
+                                            <div class="news-detail__aside-date">| 16 июля 2018, 10:04</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-detail__aside-item">
+                                        <div class="news-detail__aside-announcement">Украинский минкульт извинился за
+                                            хор Веревки и «Квартал 95» </div>
+                                        <div class="news-detail__aside-buttons">
+                                            <button
+                                                class="btn social-button social-button__comments news-detail__aside-button">
+                                                24
+                                            </button>
+                                            <div class="news-detail__aside-date">| 16 июля 2018, 10:04</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-detail__aside-item">
+                                        <div class="news-detail__aside-announcement">В 2020 году в России могут поднять
+                                            минимальные цены на водку и коньяк. Ублюдки</div>
+                                        <div class="news-detail__aside-buttons">
+                                            <button
+                                                class="btn social-button social-button__comments news-detail__aside-button">
+                                                24
+                                            </button>
+                                            <div class="news-detail__aside-date">| 16 июля 2018, 10:04</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-detail__aside-item">
+                                        <div class="news-detail__aside-announcement">Сбербанк рассказал о ставках по
+                                            ипотеке от 1%</div>
+                                        <div class="news-detail__aside-buttons">
+                                            <button
+                                                class="btn social-button social-button__comments news-detail__aside-button">
+                                                24
+                                            </button>
+                                            <div class="news-detail__aside-date">| 16 июля 2018, 10:04</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-detail__aside-item">
+                                        <div class="news-detail__aside-announcement">Сбербанк рассказал о ставках по
+                                            ипотеке от 1%</div>
+                                        <div class="news-detail__aside-buttons">
+                                            <button
+                                                class="btn social-button social-button__comments news-detail__aside-button">
+                                                24
+                                            </button>
+                                            <div class="news-detail__aside-date">| 16 июля 2018, 10:04</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="record-aside__card news-detail__aside-subscribe">
+                                <div class="record-aside__title">Рассылка</div>
+                                <div class="record-aside__subscribe">
+                                    <div class="record-aside__subscribe-text">Каждую пятницу мы в говно и не
+                                        контролируем происходящее. Узнайте первыми как мы облажаемся!</div>
+                                    <form action="" class="record-aside__subscribe-form">
+                                        <input class="record-aside__subscribe-input" type="text" name=""
+                                            placeholder="Ваш e-mail">
+                                        <button class="btn record-aside__subscribe-submit">Подписаться</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+            <section class="section news-same">
+                <div class="container">
+                    <div class="section-head  news-middle__head">
+                        <div class="section-head__col">
+                            <div  class="section-head__title h1-title">
+                                Новости по теме
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row news-middle__row news-same__row">
+                        <div class="col-lg-3 news-middle__col">
+                            <a href="news-detail.html" class="news-middle__item">
+                                <div class="news-middle__cover">
+                                    <img src="images/news-middle/news1.png" alt="" class="img-cover">
+                                </div>
+                                <div class="news-middle__title">
+                                    Заместителем председателя тульской гордумы станет Анастасия Дементьева
+                                </div>
+                                <div class="news-middle__footer">
+                                    <button href="#" class="btn social-button social-button__comments news-middle__socials">
+                                        24
+                                    </button>
+                                    <div class="news-middle__date">| 16 июля 2018, 10:04</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 news-middle__col">
+                            <a href="news-detail.html" class="news-middle__item">
+                                <div class="news-middle__cover">
+                                    <img src="images/news-middle/news2.png" alt="" class="img-cover">
+                                </div>
+                                <div class="news-middle__title">
+                                    Заместителем председателя тульской гордумы станет Анастасия Дементьева
+                                </div>
+                                <div class="news-middle__footer">
+                                    <button href="#" class="btn social-button social-button__comments news-middle__socials">
+                                        24
+                                    </button>
+                                    <div class="news-middle__date">| 16 июля 2018, 10:04</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 news-middle__col">
+                            <a href="news-detail.html" class="news-middle__item">
+                                <div class="news-middle__cover">
+                                    <img src="images/news-middle/news3.png" alt="" class="img-cover">
+                                </div>
+                                <div class="news-middle__title">
+                                    Заместителем председателя тульской гордумы станет Анастасия Дементьева
+                                </div>
+                                <div class="news-middle__footer">
+                                    <button href="#" class="btn social-button social-button__comments news-middle__socials">
+                                        24
+                                    </button>
+                                    <div class="news-middle__date">| 16 июля 2018, 10:04</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 news-middle__col">
+                            <a href="news-detail.html" class="news-middle__item">
+                                <div class="news-middle__cover">
+                                    <img src="images/news-middle/news3.png" alt="" class="img-cover">
+                                </div>
+                                <div class="news-middle__title">
+                                    Заместителем председателя тульской гордумы станет Анастасия Дементьева
+                                </div>
+                                <div class="news-middle__footer">
+                                    <button href="#" class="btn social-button social-button__comments news-middle__socials">
+                                        24
+                                    </button>
+                                    <div class="news-middle__date">| 16 июля 2018, 10:04</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="direct-horizontal__wrap">
+                        <img src="images/direct/horizontal.png" alt="" class="img-cover">
+                    </div>
+                </div>
+            </section>
+           
+        </main>
+
+        <footer class="footer">
+            <div class="footer__up">
+                <div class="container footer__up-container">
+                    <div class="footer__row">
+                        <div class="footer__col footer__col--logo">
+                            <div class="footer__logo"><img src="images/svg/icons/logoOnlyWhite.svg" alt=""
+                                    class="img-fluid"></div>
+                        </div>
+                        <div class="footer__col footer__col--sm">
+                            <nav class="footer__menu">
+                                <a href="#" class="footer__menu-title">О Туле</a>
+                                <ul class="footer__menu-list">
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Новости</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Статьи и блоги</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__col footer__col--md">
+                            <nav class="footer__menu">
+                                <a href="#" class="footer__menu-title">Календарь событий</a>
+                                <ul class="footer__menu-list">
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Анонсы</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Кино</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Акции</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Обзоры</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__col">
+                            <nav class="footer__menu">
+                                <a href="#" class="footer__menu-title">Справочная информация</a>
+                                <ul class="footer__menu-list footer__menu-list--two-columns">
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Погода в Туле</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Каталог компаний</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Расписание движения</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Вакансии</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Расписание автовокзала</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Расписание ж/д вокзала</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="footer__row footer__row--align-center">
+                        <div class="footer__age-limit">18+</div>
+                        <nav class="footer__another-links">
+                            <a href="#" class="footer__menu-link footer__menu-link--another">О портале</a>
+                            <a href="#" class="footer__menu-link footer__menu-link--another">Рекламодателям</a>
+                            <a href="#" class="footer__menu-link footer__menu-link--another">Письмо редакции</a>
+                        </nav>
+                        <div class="footer__subscribe-wrap">
+                            <div class="footer__subscribe-title">Подписаться на рассылку</div>
+                            <form action="" class="footer__subscribe-form record-aside__subscribe-form">
+                                <input type="text" class="footer__subscribe-input record-aside__subscribe-input"
+                                    placeholder="Ваш e-mail">
+                                <button class="btn record-aside__subscribe-submit">Подписаться</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__down">
+                    <div class="container footer__down-container">
+                        <div class="footer__copyright">© 2019 Все права защищены «оТуле»</div>
+                        <ul class="footer__socials">
+                            <li class="footer__social-item">
+                                <a href="#" target="_blank" class="footer__social-link">
+                                    <svg class="footer__social-icon">
+                                        <use xlink:href="images/svg/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#" target="_blank" class="footer__social-link">
+                                    <svg class="footer__social-icon">
+                                        <use xlink:href="images/svg/sprite.svg#vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#" target="_blank" class="footer__social-link">
+                                    <svg class="footer__social-icon">
+                                        <use xlink:href="images/svg/sprite.svg#ok"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#" target="_blank" class="footer__social-link">
+                                    <svg class="footer__social-icon">
+                                        <use xlink:href="images/svg/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#" target="_blank" class="footer__social-link">
+                                    <svg class="footer__social-icon">
+                                        <use xlink:href="images/svg/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </footer>
+        <script src="js/libs/jquery.dev.js"></script>
+        <script src="js/libs/jquery.fancybox.min.js"></script>
+        <script src="js/libs/jquery.maskedinput.min.js"></script>
+        <script src="js/libs/owl.carousel.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>

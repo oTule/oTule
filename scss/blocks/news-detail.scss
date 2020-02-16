@@ -1,0 +1,123 @@
+.news-detail {
+    padding-bottom: 0;
+}
+
+.news-detail__container {
+    border-bottom: 1px solid $so-black;
+    padding-bottom: rem(40px);
+}
+
+.news-detail__big-col {
+    border-right: 1px solid $border-another-gray;
+}
+
+.news-detail__small-col {
+    padding-left: rem(30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-detail__date {
+    color: $border-gray;
+    margin-bottom: rem(20px);
+    &--red {
+        color: $red;
+    }
+}
+
+.news-detail__main-title {
+    font-family: $yeseva;
+    margin-bottom: rem(30px);
+}
+
+.news-detail__photo {
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: rem(30px);
+}
+
+.news-detail__text-content {
+    margin-bottom: 30px;
+
+    p {
+        line-height: 125%;
+        margin-bottom: 40px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.news-detail__socials {
+    padding-top: rem(21px);
+    padding-bottom: rem(21px);
+    border-top: 1px solid $border-another-gray;
+    border-bottom: 1px solid $border-another-gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: rem(20px);
+}
+
+.news-detail__author {
+    .news-detail__author-static {
+        color: $red;
+    }
+}
+
+.news-detail__socials-buttons {
+    display: flex;
+    align-items: center;
+    .social-button {
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.news-detail__aside-title {
+    font-size: rem(24px);
+    line-height: rem(31px);
+    margin-bottom: rem(23px);
+    color: $text-gray-more;
+}
+
+.news-detail__aside-item {
+    margin-bottom: rem(35px);
+    display: block;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.news-detail__aside-announcement {
+    font-family: $yeseva;
+    margin-bottom: 8px;
+}
+
+.news-detail__aside-buttons {
+    display: flex;
+    align-items: center;
+    color: $text-gray-more;
+}
+
+.news-detail__aside-button {
+    &:before {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.news-detail__aside-subscribe {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    background-color: transparent;
+    .record-aside__subscribe-input {
+        background-color: transparent;
+        max-width: rem(210px);
+    }
+}
+
