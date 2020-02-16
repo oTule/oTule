@@ -1,0 +1,39 @@
+.section-filter {
+    padding-top: 0;
+    padding-bottom: rem(40px);
+}
+
+.section-filter__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $border-another-gray;
+    margin-bottom: rem(40px);
+}
+
+.section-filter__item {
+    font-size: rem(36px);
+    line-height: rem(48px);
+    padding-bottom: rem(26px);
+    position: relative;
+    display: block;
+    transition: color .1s ease-out;
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 0;
+        display: block;
+        background-color: $red;
+        opacity: 0;
+        transition: all .1s ease-out;
+    }
+    &.active, &:hover {
+        color: $red;
+        &:before {
+            height: 5px;
+            opacity: 1;
+        }
+    }
+}
