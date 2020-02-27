@@ -217,6 +217,21 @@ address {
             color: #FFFFFF;
         }
    }
+   &.tag-md-white-btn {
+        font-size: rem(16px);
+        line-height: rem(28px);
+        font-weight: normal;
+        color: $black;
+        background-color: #FFFFFF;
+        border: transparent;
+        border-radius: 2px;
+        padding: 0 rem(13px);
+        transition: all .3s ease-out;
+        &.active, &:hover {
+            // background-color: $black;
+            // color: #FFFFFF;
+        }
+   }
    &.comment-btn {
        display: inline-flex;
        align-items: center;
@@ -240,6 +255,28 @@ address {
        &:before {
            content: '⮩';
            font-size: rem(26px);
+       }
+   }
+   &.shadowed-btn {
+       line-height: rem(49px);
+       padding: 0 rem(27px);
+       border-radius: 5px;
+       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+       background: #FFFFFF;
+       &--color-red {
+           color: $red;
+       }
+       &--arrow-down {
+           display: flex;
+           align-items: baseline;
+           &:after {
+               content: '';
+               margin-left: 5px;
+               width: 14px;
+               height: 7px;
+               display: block;
+               background: url(../images/svg/icons/arrow-down-small.svg) center center / contain no-repeat;
+           }
        }
    }
 }

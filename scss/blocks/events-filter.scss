@@ -1,0 +1,16 @@
+.events-filter__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(40px);
+}
+
+.events-filter__col {
+    display: flex;
+}
+
+.events-filter__button {
+    margin-right: rem(17px);
+    &:last-child {
+        margin-right: 0;
+    }
+}
