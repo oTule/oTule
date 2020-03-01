@@ -1,0 +1,37 @@
+.announcement-events__filter-title {
+    margin-bottom: rem(20px);
+}
+
+.announcement-events__filter-link {
+    margin-right: rem(25px);
+    text-decoration: none;
+}
+
+.announcement-events__item {
+    margin-bottom: rem(36px);
+}
+
+.announcement-events__cover {
+    height: rem(175px);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: rem(20px);
+}
+
+.announcement-events__hashtag-btn {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+}
+
+.announcement-events__name {
+    font-family: $yeseva;
+    line-height: rem(21px);
+    margin-bottom: 7px;
+}
+
+.announcement-events__date {
+    font-size: rem(16px);
+    color: $text-gray-more;
+}
+
