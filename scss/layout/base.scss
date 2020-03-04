@@ -287,20 +287,28 @@ address {
            }
        }
        &.datepicker-btn {
-           padding: 0;
+           padding: 0 rem(25px);
            position: relative;
            &:after {
                content: '';
-               position: absolute;
-               right: 9px;
-               top: 50%;
-               transform: translateY(-50%);
+           }
+           &.picker-active {
+               box-shadow: none;
+                .events-filter__datepicker-reset {
+                    opacity: 1;
+                    width: 16px;
+                }
+               .events-filter__datepicker-wrap {
+                background-color: $border-another-gray;
+               }
+               .datepicker-here {
+                    max-width: 90px;
+               }
            }
            .datepicker-here {
-               width: 100%;
-               height: 100%;
-               position: relative;
-               z-index: 1;
+            //    width: 100%;
+            //    height: 100%;
+            //    z-index: 1;
                &::placeholder {
                    color: $black;
                }

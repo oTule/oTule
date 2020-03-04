@@ -82,10 +82,14 @@
                     <div class="events-filter__wrap">
                         <div class="events-filter__col">
                             <!-- <button class="btn shadowed-btn shadowed-btn--arrow-down events-filter__button">Выбрать
-                                дату</button> -->
-                            <div class="btn shadowed-btn shadowed-btn--arrow-down events-filter__button datepicker-btn">
-                                <input placeholder="Выбрать дату" type='text' class="btn datepicker-here" />
-                            </div>
+                                дату</button>   -->
+                                    <div class="btn shadowed-btn shadowed-btn--arrow-down events-filter__button datepicker-btn">
+                                        Выбрать дату
+                                        <form class="events-filter__datepicker-wrap">
+                                            <input type='text' class="btn datepicker-here events-filter__datepicker-input" />
+                                            <button type="reset"  class="btn events-filter__datepicker-reset"><img src="images/svg/icons/close-red.svg" alt="" class="img-fluid"></button>
+                                        </form>
+                                    </div>
                             <button class="btn shadowed-btn events-filter__button">Сегодня</button>
                             <button class="btn shadowed-btn events-filter__button">Завтра</button>
                             <button class="btn shadowed-btn events-filter__button">Выходные</button>
