@@ -1,0 +1,50 @@
+.announcements-events {
+    &--sames {
+        padding-top: 0;
+    }
+}
+
+.announcements-events__filter-title {
+    margin-bottom: rem(20px);
+}
+
+.announcements-events__filter-link {
+    margin-right: rem(25px);
+    text-decoration: none;
+}
+
+.announcements-events__item {
+    margin-bottom: rem(36px);
+}
+
+.announcements-events__cover {
+    height: rem(175px);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: rem(20px);
+}
+
+.announcements-events__hashtag-btn {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+}
+
+.announcements-events__name {
+    font-family: $yeseva;
+    line-height: rem(21px);
+    margin-bottom: 7px;
+}
+
+.announcements-events__date {
+    font-size: rem(16px);
+    color: $text-gray-more;
+}
+
+.announcements-events__filter {
+    padding-bottom: 10px;
+    border-bottom: 1px solid $border-another-gray;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

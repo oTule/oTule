@@ -44,10 +44,12 @@
 
 .social-button__rating-down:before {
     background-image: url(../images/svg/icons/rating-down.svg);
+    margin-right: 0;
 }
 
 .social-button__rating-up:before {
     background-image: url(../images/svg/icons/rating-up.svg);
+    margin-right: 0;
 }
 
 
@@ -71,4 +73,9 @@
 
 .record__rating {
     margin-right: rem(10px);
+}
+
+.reviews-item__rating {
+    min-width: 40px;
+    text-align: center;
 }
