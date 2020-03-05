@@ -9432,6 +9432,10 @@ address {
 
 .section-head__title {
   margin-right: 1.875rem; }
+  .section-head__title--center {
+    text-align: center;
+    margin-right: 0;
+    width: 100%; }
 
 .section-head__date {
   color: #7C7C7C;
@@ -10648,7 +10652,8 @@ address {
   justify-content: space-between; }
 
 .reviews-item {
-  display: block; }
+  display: block;
+  margin-bottom: 2.5rem; }
 
 .reviews-item__cover {
   height: 20.4375rem;
