@@ -1,4 +1,5 @@
 @import "libs/bootstrap.min.scss";
+@import "libs/datepicker.min.scss"; 
 @import "layout/normalize.scss";
 @import "layout/fonts";
 @import "layout/variables";
@@ -30,3 +31,8 @@
 @import "blocks/comments.scss";
 @import "blocks/comment-message.scss";
 @import "blocks/news-same.scss";
+@import "blocks/events-filter.scss";
+@import "blocks/events-top.scss";
+@import "blocks/announcements.scss";
+@import "blocks/announcements-events.scss";
+@import "blocks/reviews-item.scss";

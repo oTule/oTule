@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-up">
+                <div class="container header-up__container">
+                    <nav class="header-up__nav">
+                        <ul class="header-up__menu">
+                            <li class="header-up__menu-item">
+                                <a href="#" class="header-up__menu-link">О портале</a>
+                            </li>
+                            <li class="header-up__menu-item">
+                                <a href="#" class="header-up__menu-link">Рекламодателям</a>
+                            </li>
+                            <li class="header-up__menu-item">
+                                <a href="#" class="header-up__menu-link">Письмо редакции</a>
+                            </li>
+                            <li class="header-up__menu-item">
+                                <a href="styles.html" class="header-up__menu-link">!стили\типографика\иконки!</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="btn header-up__auth js-authPopup">
+                        Авторизоваться
+                    </button>
+                </div>
+            </div>
+            <div class="header-down">
+                <div class="container header-down__container">
+                    <div class="header-down__col">
+                        <a href="/" class="header-down__logo">
+                            <img src="images/svg/icons/logoBlack.svg" alt="" class="img-fluid">
+                        </a>
+                        <div class="header-down__calendar-btn">
+                            <a href="calendar.html" class="header-down__calendar-link">Календарь событий</a>
+                        </div>
+                    </div>
+                    <div class="header-down__col">
+                        <nav class="header-down__nav">
+                            <ul class="header-down__menu">
+                                <li class="header-down__menu-item">
+                                    <a href="news-index.html" class="header-down__menu-link">Новости</a>
+                                </li>
+                                <li class="header-down__menu-item">
+                                    <a href="#" class="header-down__menu-link">Статьи и блоги</a>
+                                </li>
+                                <li class="header-down__menu-item">
+                                    <a href="#" class="header-down__menu-link">Справочная</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header-down__col">
+                        <form action="" class="header-down__search-form">
+                            <input type="text" class="header-down__search-input">
+                            <button class="btn header-down__search-btn"><img src="images/svg/icons/search.svg" alt=""
+                                    class="img-fluid"></button>
+                        </form>
+                        <button type="button" class="header-down__posting-btn btn transparent-gray-border-btn">
+                            Запостить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="page-content inner__page-content">
+            <h1 class="inner__page-title">Ожидаемые события октября</h1>
+            <div class="container">
+                <section class="section events-filter">
+                    <div class="events-filter__wrap">
+                        <div class="events-filter__col">
+                            <!-- <button class="btn shadowed-btn shadowed-btn--arrow-down events-filter__button">Выбрать
+                                дату</button>   -->
+                                    <div class="btn shadowed-btn shadowed-btn--arrow-down events-filter__button datepicker-btn">
+                                        Выбрать дату
+                                        <form class="events-filter__datepicker-wrap">
+                                            <input type='text' class="btn datepicker-here events-filter__datepicker-input" />
+                                            <button type="reset"  class="btn events-filter__datepicker-reset"><img src="images/svg/icons/close-red.svg" alt="" class="img-fluid"></button>
+                                        </form>
+                                    </div>
+                            <button class="btn shadowed-btn events-filter__button">Сегодня</button>
+                            <button class="btn shadowed-btn events-filter__button">Завтра</button>
+                            <button class="btn shadowed-btn events-filter__button">Выходные</button>
+                        </div>
+                        <div class="events-filter__col">
+                            <button class="btn shadowed-btn shadowed-btn--color-red events-filter__button">Предложить
+                                анонс</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+                <section class="section section--white-bg announcements-events">
+                    <div class="container">
+                        <div class="section-head  announcements-events__head">
+                            <div class="section-head__col section-head__col--wide">
+                                <div class="section-head__filters announcements-events__filter">
+                                    <a href="#" class="section-head__filter-link announcements-events__filter-link active">Концерт</a>
+                                    <a href="#" class="section-head__filter-link announcements-events__filter-link">Театр</a>
+                                    <a href="#" class="section-head__filter-link announcements-events__filter-link">Выставка</a>
+                                    <a href="#" class="section-head__filter-link announcements-events__filter-link">Мастер-класс</a>
+                                    <a href="#" class="section-head__filter-link announcements-events__filter-link">Праздник</a>
+                                    <a href="#" class="section-head__filter-link announcements-events__filter-link">Фестиваль</a>
+                                    <a href="#" class="section-head__filter-link announcements-events__filter-link">Для детей</a>
+                                    <a href="#" class="section-head__filter-link announcements-events__filter-link">Лекция</a>
+                                    <a href="#" class="section-head__filter-link announcements-events__filter-link">Спорт</a>
+                                    <a href="#" class="section-head__filter-link announcements-events__filter-link">Вечеринка</a>
+                                    <a href="#" class="section-head__filter-link section-head__filter-link--color-red announcements-events__filter-link">Бесплатно</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row announcements-events__row">
+                            <div class="col-lg-3 announcements-events__item">
+                                <div class="announcements-events__cover">
+                                    <img src="images/announcement-events/announcement-events1.png" alt="" class="img-cover">
+                                    <a href="#" class="announcements-events__hashtag-btn btn red-hashtag-btn">Событие</a>
+                                </div>
+                                <div class="announcements-events__name">Пошлая Молли</div>
+                                <div class="announcements-events__date">24 октября 2019</div>
+                            </div>
+                            <div class="col-lg-3 announcements-events__item">
+                                <div class="announcements-events__cover">
+                                    <img src="images/announcement-events/announcement-events2.png" alt="" class="img-cover">
+                                    <a href="#" class="announcements-events__hashtag-btn btn red-hashtag-btn">Событие</a>
+                                </div>
+                                <div class="announcements-events__name">Ушлая Долли</div>
+                                <div class="announcements-events__date">24 октября 2019</div>
+                            </div>
+                            <div class="col-lg-3 announcements-events__item">
+                                <div class="announcements-events__cover">
+                                    <img src="images/announcement-events/announcement-events3.png" alt="" class="img-cover">
+                                    <a href="#" class="announcements-events__hashtag-btn btn red-hashtag-btn">Событие</a>
+                                </div>
+                                <div class="announcements-events__name">Душная Полли</div>
+                                <div class="announcements-events__date">24 октября 2019</div>
+                            </div>
+                            <div class="col-lg-3 announcements-events__item">
+                                <div class="announcements-events__cover">
+                                    <img src="images/announcement-events/announcement-events4.png" alt="" class="img-cover">
+                                    <a href="#" class="announcements-events__hashtag-btn btn red-hashtag-btn">Событие</a>
+                                </div>
+                                <div class="announcements-events__name">Трушная Золли</div>
+                                <div class="announcements-events__date">24 октября 2019</div>
+                            </div>
+                            <div class="col-lg-3 announcements-events__item">
+                                <div class="announcements-events__cover">
+                                    <img src="images/announcement-events/announcement-events1.png" alt="" class="img-cover">
+                                    <a href="#" class="announcements-events__hashtag-btn btn red-hashtag-btn">Событие</a>
+                                </div>
+                                <div class="announcements-events__name">Пошлая Молли</div>
+                                <div class="announcements-events__date">24 октября 2019</div>
+                            </div>
+                            <div class="col-lg-3 announcements-events__item">
+                                <div class="announcements-events__cover">
+                                    <img src="images/announcement-events/announcement-events2.png" alt="" class="img-cover">
+                                    <a href="#" class="announcements-events__hashtag-btn btn red-hashtag-btn">Событие</a>
+                                </div>
+                                <div class="announcements-events__name">Ушлая Долли</div>
+                                <div class="announcements-events__date">24 октября 2019</div>
+                            </div>
+                            <div class="col-lg-3 announcements-events__item">
+                                <div class="announcements-events__cover">
+                                    <img src="images/announcement-events/announcement-events3.png" alt="" class="img-cover">
+                                    <a href="#" class="announcements-events__hashtag-btn btn red-hashtag-btn">Событие</a>
+                                </div>
+                                <div class="announcements-events__name">Душная Полли</div>
+                                <div class="announcements-events__date">24 октября 2019</div>
+                            </div>
+                            <div class="col-lg-3 announcements-events__item">
+                                <div class="announcements-events__cover">
+                                    <img src="images/announcement-events/announcement-events4.png" alt="" class="img-cover">
+                                    <a href="#" class="announcements-events__hashtag-btn btn red-hashtag-btn">Событие</a>
+                                </div>
+                                <div class="announcements-events__name">Трушная Золли</div>
+                                <div class="announcements-events__date">24 октября 2019</div>
+                            </div>
+                            <div class="col-lg-3 announcements-events__item">
+                                <div class="announcements-events__cover">
+                                    <img src="images/announcement-events/announcement-events1.png" alt="" class="img-cover">
+                                    <a href="#" class="announcements-events__hashtag-btn btn red-hashtag-btn">Событие</a>
+                                </div>
+                                <div class="announcements-events__name">Пошлая Молли</div>
+                                <div class="announcements-events__date">24 октября 2019</div>
+                            </div>
+                            <div class="col-lg-3 announcements-events__item">
+                                <div class="announcements-events__cover">
+                                    <img src="images/announcement-events/announcement-events2.png" alt="" class="img-cover">
+                                    <a href="#" class="announcements-events__hashtag-btn btn red-hashtag-btn">Событие</a>
+                                </div>
+                                <div class="announcements-events__name">Ушлая Долли</div>
+                                <div class="announcements-events__date">24 октября 2019</div>
+                            </div>
+                            <div class="col-lg-3 announcements-events__item">
+                                <div class="announcements-events__cover">
+                                    <img src="images/announcement-events/announcement-events3.png" alt="" class="img-cover">
+                                    <a href="#" class="announcements-events__hashtag-btn btn red-hashtag-btn">Событие</a>
+                                </div>
+                                <div class="announcements-events__name">Душная Полли</div>
+                                <div class="announcements-events__date">24 октября 2019</div>
+                            </div>
+                            <div class="col-lg-3 announcements-events__item">
+                                <div class="announcements-events__cover">
+                                    <img src="images/announcement-events/announcement-events4.png" alt="" class="img-cover">
+                                    <a href="#" class="announcements-events__hashtag-btn btn red-hashtag-btn">Событие</a>
+                                </div>
+                                <div class="announcements-events__name">Трушная Золли</div>
+                                <div class="announcements-events__date">24 октября 2019</div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn records__more">Еще 8 анонсов</a>
+                    </div>
+                </section>
+
+                <section class="section section--white-bg announcements-events announcements-events--sames">
+                    <div class="container">
+                        <div class="section-head  announcements-events__head">
+                            <div class="section-head__col section-head__col--wide">
+                                <div  class="section-head__title section-head__title--center announcements-events__filter-title h1-title">
+                                    Обзоры прошедших мероприятий
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews">
+                            <div class="reviews__row row">
+                                <a href="reviews-detail.html" class="col-lg-4 reviews__item reviews-item">
+                                    <div class="reviews-item__cover">
+                                        <img src="images/reviews/reviews-1.png" alt="" class="img-cover">
+                                    </div>
+                                    <div class="reviews-item__author">
+                                        <div class="reviews-item__author-avatar">
+                                            <img src="images/reviews/ava1.png" alt="" class="img-cover">
+                                        </div>
+                                        <div class="reviews-item__author-info">
+                                            <div class="reviews-item__author-name">Сергей Белоусов</div>
+                                            <div class="reviews-item__date">24 октября 2019</div>
+                                        </div>
+                                        <div class="reviews-item__rating-buttons">
+                                            <button href="#" class="btn reviews-item__rating-button social-button social-button__rating-down"></button>
+                                            <div class="reviews-item__rating">53</div>
+                                            <button href="#" class="btn reviews-item__rating-button social-button social-button__rating-up"></button>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-item__title">Сходили на нового Соника в кино, разбираемся вместе.</div>
+                                    <div class="reviews-item__social">
+                                        <button class="btn record__social social-button social-button__comments">
+                                            24
+                                        </button>
+                                        <button class="btn record__social social-button social-button__views">
+                                            1535
+                                        </button>
+                                    </div>
+                                </a>
+                                <a href="reviews-detail.html" class="col-lg-4 reviews__item reviews-item">
+                                    <div class="reviews-item__cover">
+                                        <img src="images/reviews/reviews-2.png" alt="" class="img-cover">
+                                    </div>
+                                    <div class="reviews-item__author">
+                                        <div class="reviews-item__author-avatar">
+                                            <img src="images/reviews/ava2.png" alt="" class="img-cover">
+                                        </div>
+                                        <div class="reviews-item__author-info">
+                                            <div class="reviews-item__author-name">Алексей Шустрый</div>
+                                            <div class="reviews-item__date">24 октября 2019</div>
+                                        </div>
+                                        <div class="reviews-item__rating-buttons">
+                                            <button href="#" class="btn reviews-item__rating-button social-button social-button__rating-down"></button>
+                                            <div class="reviews-item__rating">53</div>
+                                            <button href="#" class="btn reviews-item__rating-button social-button social-button__rating-up"></button>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-item__title">Чем расплатилась молодая мамочка с доктором.</div>
+                                    <div class="reviews-item__social">
+                                        <button class="btn record__social social-button social-button__comments">
+                                            24
+                                        </button>
+                                        <button class="btn record__social social-button social-button__views">
+                                            1535
+                                        </button>
+                                    </div>
+                                </a>
+                                <a href="reviews-detail.html" class="col-lg-4 reviews__item reviews-item">
+                                    <div class="reviews-item__cover">
+                                        <img src="images/reviews/reviews-3.png" alt="" class="img-cover">
+                                    </div>
+                                    <div class="reviews-item__author">
+                                        <div class="reviews-item__author-avatar">
+                                            <img src="images/reviews/ava2.png" alt="" class="img-cover">
+                                        </div>
+                                        <div class="reviews-item__author-info">
+                                            <div class="reviews-item__author-name">Алексей Шустрый</div>
+                                            <div class="reviews-item__date">24 октября 2019</div>
+                                        </div>
+                                        <div class="reviews-item__rating-buttons">
+                                            <button href="#" class="btn reviews-item__rating-button social-button social-button__rating-down"></button>
+                                            <div class="reviews-item__rating">53</div>
+                                            <button href="#" class="btn reviews-item__rating-button social-button social-button__rating-up"></button>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-item__title">Почему ваша одежда выглядит дешево? Потому что это не химзащита</div>
+                                    <div class="reviews-item__social">
+                                        <button class="btn record__social social-button social-button__comments">
+                                            24
+                                        </button>
+                                        <button class="btn record__social social-button social-button__views">
+                                            1535
+                                        </button>
+                                    </div>
+                                </a>
+                                <a href="reviews-detail.html" class="col-lg-4 reviews__item reviews-item">
+                                    <div class="reviews-item__cover">
+                                        <img src="images/reviews/reviews-4.png" alt="" class="img-cover">
+                                    </div>
+                                    <div class="reviews-item__author">
+                                        <div class="reviews-item__author-avatar">
+                                            <img src="images/reviews/ava2.png" alt="" class="img-cover">
+                                        </div>
+                                        <div class="reviews-item__author-info">
+                                            <div class="reviews-item__author-name">oTule.ru</div>
+                                            <div class="reviews-item__date">24 октября 2019</div>
+                                        </div>
+                                        <div class="reviews-item__rating-buttons">
+                                            <button href="#" class="btn reviews-item__rating-button social-button social-button__rating-down"></button>
+                                            <div class="reviews-item__rating">666</div>
+                                            <button href="#" class="btn reviews-item__rating-button social-button social-button__rating-up"></button>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-item__title">Лучшие умы боролись с короновирусом и посмотрите где они теперь</div>
+                                    <div class="reviews-item__social">
+                                        <button class="btn record__social social-button social-button__comments">
+                                            666
+                                        </button>
+                                        <button class="btn record__social social-button social-button__views">
+                                            1535
+                                        </button>
+                                    </div>
+                                </a>
+                                <a href="reviews-detail.html" class="col-lg-4 reviews__item reviews-item">
+                                    <div class="reviews-item__cover">
+                                        <img src="images/reviews/Mik-Tomson.jpg" alt="" class="img-cover">
+                                    </div>
+                                    <div class="reviews-item__author">
+                                        <div class="reviews-item__author-avatar">
+                                            <img src="images/reviews/joey.jpg" alt="" class="img-cover">
+                                        </div>
+                                        <div class="reviews-item__author-info">
+                                            <div class="reviews-item__author-name">Джоуи Неудачник</div>
+                                            <div class="reviews-item__date">24 октября 2019</div>
+                                        </div>
+                                        <div class="reviews-item__rating-buttons">
+                                            <button href="#" class="btn reviews-item__rating-button social-button social-button__rating-down"></button>
+                                            <div class="reviews-item__rating">666</div>
+                                            <button href="#" class="btn reviews-item__rating-button social-button social-button__rating-up"></button>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-item__title">Кори сказал, что он лучше седьмого и поплатился за это</div>
+                                    <div class="reviews-item__social">
+                                        <button class="btn record__social social-button social-button__comments">
+                                            666
+                                        </button>
+                                        <button class="btn record__social social-button social-button__views">
+                                            1535
+                                        </button>
+                                    </div>
+                                </a>
+                                <a href="reviews-detail.html" class="col-lg-4 reviews__item reviews-item">
+                                    <div class="reviews-item__cover">
+                                        <img src="images/reviews/rk.jpg" alt="" class="img-cover">
+                                    </div>
+                                    <div class="reviews-item__author">
+                                        <div class="reviews-item__author-avatar">
+                                            <img src="images/reviews/Picklerick.jpg" alt="" class="img-cover">
+                                        </div>
+                                        <div class="reviews-item__author-info">
+                                            <div class="reviews-item__author-name">Огурчик Рик Санчез</div>
+                                            <div class="reviews-item__date">24 октября 2019</div>
+                                        </div>
+                                        <div class="reviews-item__rating-buttons">
+                                            <button href="#" class="btn reviews-item__rating-button social-button social-button__rating-down"></button>
+                                            <div class="reviews-item__rating">666</div>
+                                            <button href="#" class="btn reviews-item__rating-button social-button social-button__rating-up"></button>
+                                        </div>
+                                    </div>
+                                    <div class="reviews-item__title">Вы бы тоже офигели если бы увидели это!</div>
+                                    <div class="reviews-item__social">
+                                        <button class="btn record__social social-button social-button__comments">
+                                            666
+                                        </button>
+                                        <button class="btn record__social social-button social-button__views">
+                                            1535
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="#" class="btn records__more">Еще 5 обзоров</a>
+                        </div>
+                    </div>
+                </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__up">
+                <div class="container footer__up-container">
+                    <div class="footer__row">
+                        <div class="footer__col footer__col--logo">
+                            <div class="footer__logo"><img src="images/svg/icons/logoOnlyWhite.svg" alt=""
+                                    class="img-fluid"></div>
+                        </div>
+                        <div class="footer__col footer__col--sm">
+                            <nav class="footer__menu">
+                                <a href="#" class="footer__menu-title">О Туле</a>
+                                <ul class="footer__menu-list">
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Новости</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Статьи и блоги</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__col footer__col--md">
+                            <nav class="footer__menu">
+                                <a href="#" class="footer__menu-title">Календарь событий</a>
+                                <ul class="footer__menu-list">
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Анонсы</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Кино</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Акции</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Обзоры</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__col">
+                            <nav class="footer__menu">
+                                <a href="#" class="footer__menu-title">Справочная информация</a>
+                                <ul class="footer__menu-list footer__menu-list--two-columns">
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Погода в Туле</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Каталог компаний</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Расписание движения</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Вакансии</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Расписание автовокзала</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link">Расписание ж/д вокзала</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="footer__row footer__row--align-center">
+                        <div class="footer__age-limit">18+</div>
+                        <nav class="footer__another-links">
+                            <a href="#" class="footer__menu-link footer__menu-link--another">О портале</a>
+                            <a href="#" class="footer__menu-link footer__menu-link--another">Рекламодателям</a>
+                            <a href="#" class="footer__menu-link footer__menu-link--another">Письмо редакции</a>
+                        </nav>
+                        <div class="footer__subscribe-wrap">
+                            <div class="footer__subscribe-title">Подписаться на рассылку</div>
+                            <form action="" class="footer__subscribe-form record-aside__subscribe-form">
+                                <input type="text" class="footer__subscribe-input record-aside__subscribe-input"
+                                    placeholder="Ваш e-mail">
+                                <button class="btn record-aside__subscribe-submit">Подписаться</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__down">
+                    <div class="container footer__down-container">
+                        <div class="footer__copyright">© 2019 Все права защищены «оТуле»</div>
+                        <ul class="footer__socials">
+                            <li class="footer__social-item">
+                                <a href="#" target="_blank" class="footer__social-link">
+                                    <svg class="footer__social-icon">
+                                        <use xlink:href="images/svg/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#" target="_blank" class="footer__social-link">
+                                    <svg class="footer__social-icon">
+                                        <use xlink:href="images/svg/sprite.svg#vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#" target="_blank" class="footer__social-link">
+                                    <svg class="footer__social-icon">
+                                        <use xlink:href="images/svg/sprite.svg#ok"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#" target="_blank" class="footer__social-link">
+                                    <svg class="footer__social-icon">
+                                        <use xlink:href="images/svg/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#" target="_blank" class="footer__social-link">
+                                    <svg class="footer__social-icon">
+                                        <use xlink:href="images/svg/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </footer>
+        <script src="js/libs/jquery.dev.js"></script>
+        <script src="js/libs/jquery.fancybox.min.js"></script>
+        <script src="js/libs/jquery.maskedinput.min.js"></script>
+        <script src="js/libs/owl.carousel.min.js"></script>
+        <script src="js/libs/datepicker.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
