@@ -9379,10 +9379,12 @@ address {
   background-image: url(../images/svg/icons/dislike.svg); }
 
 .social-button__rating-down:before {
-  background-image: url(../images/svg/icons/rating-down.svg); }
+  background-image: url(../images/svg/icons/rating-down.svg);
+  margin-right: 0; }
 
 .social-button__rating-up:before {
-  background-image: url(../images/svg/icons/rating-up.svg); }
+  background-image: url(../images/svg/icons/rating-up.svg);
+  margin-right: 0; }
 
 .social-button__views {
   margin-right: 2.1875rem; }
@@ -9399,6 +9401,10 @@ address {
 
 .record__rating {
   margin-right: 0.625rem; }
+
+.reviews-item__rating {
+  min-width: 40px;
+  text-align: center; }
 
 .section-head {
   display: -webkit-box;
@@ -9426,6 +9432,10 @@ address {
 
 .section-head__title {
   margin-right: 1.875rem; }
+  .section-head__title--center {
+    text-align: center;
+    margin-right: 0;
+    width: 100%; }
 
 .section-head__date {
   color: #7C7C7C;
@@ -10489,6 +10499,9 @@ address {
 .news-same .news-middle__item {
   border-bottom: 0; }
 
+.events-filter {
+  padding-bottom: 0; }
+
 .events-filter__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10594,32 +10607,107 @@ address {
   font-family: "Didact Gothic", "Comic Sans MS", "Monaco", cursive;
   font-size: 1rem; }
 
-.announcement-events__filter-title {
+.announcements-events--sames {
+  padding-top: 0; }
+
+.announcements-events__filter-title {
   margin-bottom: 1.25rem; }
 
-.announcement-events__filter-link {
+.announcements-events__filter-link {
   margin-right: 1.5625rem;
   text-decoration: none; }
 
-.announcement-events__item {
+.announcements-events__item {
   margin-bottom: 2.25rem; }
 
-.announcement-events__cover {
+.announcements-events__cover {
   height: 10.9375rem;
   position: relative;
   overflow: hidden;
   margin-bottom: 1.25rem; }
 
-.announcement-events__hashtag-btn {
+.announcements-events__hashtag-btn {
   position: absolute;
   top: 9px;
   right: 9px; }
 
-.announcement-events__name {
+.announcements-events__name {
   font-family: "Yeseva One", "Comic Sans MS", "Monaco", cursive;
   line-height: 1.3125rem;
   margin-bottom: 7px; }
 
-.announcement-events__date {
+.announcements-events__date {
   font-size: 1rem;
   color: #C0C0C0; }
+
+.announcements-events__filter {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E5E5E5;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.reviews-item {
+  display: block;
+  margin-bottom: 2.5rem; }
+
+.reviews-item__cover {
+  height: 20.4375rem;
+  overflow: hidden;
+  margin-bottom: 15px; }
+
+.reviews-item__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1.25rem; }
+
+.reviews-item__author-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: 1.0625rem; }
+
+.reviews-item__author-name {
+  font-size: 1rem; }
+
+.reviews-item__date {
+  font-size: 12px;
+  color: #7C7C7C; }
+
+.reviews-item__rating-buttons {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .reviews-item__rating-buttons .social-button {
+    margin-right: 0; }
+  .reviews-item__rating-buttons .social-button__rating-up:before {
+    margin-right: 0; }
+
+.reviews-item__title {
+  font-family: "Yeseva One", "Comic Sans MS", "Monaco", cursive;
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
+  margin-bottom: 1.375rem; }
+
+.reviews-item__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
