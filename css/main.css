@@ -1,0 +1,158 @@
+/* colors */
+/*fonts*/
+/*adaptive*/
+.articles__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.articles__card {
+  border-radius: 5px;
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+.articles__card:after {
+  content: "";
+  height: 60%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 71.37%, rgba(0, 0, 0, 0) 100%);
+  display: block;
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.articles__card--main {
+  border-radius: 5px;
+  position: relative;
+}
+.articles__card--main:after {
+  content: "";
+  height: 60%;
+  width: 100%;
+  background: linear-gradient(0deg, #905130 1.55%, rgba(144, 81, 48, 0) 100%);
+  display: block;
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  transform: initial;
+}
+.articles__card--main .articles__card-title {
+  position: absolute;
+  z-index: 10;
+  font-family: "Yeseva One", "Comic Sans MS", "Monaco", cursive;
+  font-size: 40px;
+  color: #ffffff;
+  bottom: 114px;
+  left: 30px;
+}
+.articles__card-title {
+  position: absolute;
+  z-index: 10;
+  font-family: "Yeseva One", "Comic Sans MS", "Monaco", cursive;
+  font-size: 30px;
+  color: #ffffff;
+  bottom: 114px;
+  left: 30px;
+}
+.articles__card-date {
+  position: absolute;
+  z-index: 10;
+  font-family: "Didact Gothic", "Comic Sans MS", "Monaco", cursive;
+  left: 30px;
+  color: #ffffff;
+  bottom: 77px;
+  font-size: 18px;
+}
+.articles__card-btn-box {
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  left: 30px;
+  bottom: 21px;
+}
+.articles__card-btn {
+  font-family: "Didact Gothic", "Comic Sans MS", "Monaco", cursive;
+  font-size: 20px;
+  color: #242226;
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+.articles__card-btn--more {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.articles__card--hot:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: block;
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  transform: initial;
+}
+.articles__card--hot .articles__card-text {
+  z-index: 10;
+  color: #F51212;
+  font-size: 24px;
+  font-family: "Didact Gothic", "Comic Sans MS", "Monaco", cursive;
+  bottom: 220px;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.articles__card--hot .articles__card-title {
+  position: absolute;
+  z-index: 10;
+  font-family: "Yeseva One", "Comic Sans MS", "Monaco", cursive;
+  font-size: 40px;
+  color: #ffffff;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  bottom: 165px;
+}
+.articles__card--hot .articles__card-description {
+  font-size: 18px;
+  font-family: "Didact Gothic", "Comic Sans MS", "Monaco", cursive;
+  color: #ffffff;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  bottom: 107px;
+  text-align: center;
+}
+.articles__card--hot .articles__card-btn {
+  position: absolute;
+  bottom: 45px;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.articles__btn {
+  font-size: 18px;
+  font-family: "Didact Gothic", "Comic Sans MS", "Monaco", cursive;
+  color: #242226;
+  border: 1px solid #E5E5E5;
+  display: block;
+  max-width: 180px;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0 auto 140px;
+}
+
+/*# sourceMappingURL=main.css.map */
