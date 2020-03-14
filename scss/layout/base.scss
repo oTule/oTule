@@ -38,6 +38,7 @@ body {
     font-family: $didact;
     background-color: $bgc-gray;
     color: $black;
+
     &.fixed {
         overflow: hidden;
         width: 100%;
@@ -49,6 +50,7 @@ body {
 a {
     text-decoration: none;
     color: $black;
+
     &:hover {
         text-decoration: none;
         color: inherit;
@@ -64,37 +66,44 @@ h6 {
     margin: 0;
 }
 
-h1, .h1-title {
+h1,
+.h1-title {
     font-size: rem(36px);
     font-family: $didact;
     font-weight: bold;
 }
+
 .h1-yeseva {
     font-size: rem(36px);
     font-family: $yeseva;
     font-weight: bold;
     color: #FFFFFF;
 }
+
 h2 {
     font-size: rem(24px);
     font-weight: bold;
 }
+
 .h2-yeseva {
     font-size: rem(30px);
     font-family: $yeseva;
     font-weight: bold;
     color: #FFFFFF;
 }
+
 h3 {
     font-size: rem(18px);
     font-weight: bold;
 }
+
 .h3-yeseva {
     font-size: rem(24px);
     font-family: $yeseva;
     font-weight: bold;
     color: #FFFFFF;
 }
+
 ul {
     padding: 0;
     margin: 0;
@@ -125,12 +134,15 @@ address {
     width: 95%;
     margin: 0 auto;
     position: relative;
+
     @include small-desktop {
         max-width: 1140px;
     }
+
     @include tablets {
         max-width: 993px;
     }
+
     @include phones {
         width: 98%;
     }
@@ -138,6 +150,7 @@ address {
 
 .section {
     padding: rem(40px) 0;
+
     &--white-bg {
         background-color: #FFFFFF;
     }
@@ -163,10 +176,12 @@ address {
     font-weight: bold;
     padding: 0;
     cursor: pointer;
-    &:focus, &:active {
+
+    &:focus,
+    &:active {
         outline: 0;
     }
-    
+
     &.records__more {
         display: block;
         background-color: $bgc-gray;
@@ -174,43 +189,49 @@ address {
         border-radius: 5px;
         line-height: rem(55px);
     }
-   &.transparent-gray-border-btn {
-       line-height: rem(40px);
-       padding: 0 rem(50px);
-       border: 1px solid $border-gray;
-       border-radius: 5px;
-   }
-   &.gray-back-white-text-btn {
-       line-height: rem(40px);
-       padding: 0 rem(20px);
-       border-radius: 5px;
-       color:#FFFFFF;
-       background-color: $black;
-   }
-   &.red-hashtag-btn {
-       line-height: rem(28px);
-       padding: 0 rem(10px);
-       background-color: red;
-       border-radius: 3px;
-       color: #FFFFFF;
-   }
-   &.gray-btn {
+
+    &.transparent-gray-border-btn {
+        line-height: rem(40px);
+        padding: 0 rem(50px);
+        border: 1px solid $border-gray;
+        border-radius: 5px;
+    }
+
+    &.gray-back-white-text-btn {
+        line-height: rem(40px);
+        padding: 0 rem(20px);
+        border-radius: 5px;
+        color: #FFFFFF;
+        background-color: $black;
+    }
+
+    &.red-hashtag-btn {
+        line-height: rem(28px);
+        padding: 0 rem(10px);
+        background-color: red;
+        border-radius: 3px;
+        color: #FFFFFF;
+    }
+
+    &.gray-btn {
         line-height: rem(57px);
         border: 1px solid $border-another-gray;
         background-color: $bgc-gray;
         padding: 0 rem(50px);
-   }
-   &.tag-white-btn {
-       line-height: rem(22px);
-       padding: 0 rem(12px);
-       border-radius: 5px;
-       border: 1px solid $border-another-gray;
-       margin-right: rem(15px);
-       margin-bottom: rem(10px);
-       color: $text-gray;
-       font-size: rem(15px);
-   }
-   &.tag-md-btn {
+    }
+
+    &.tag-white-btn {
+        line-height: rem(22px);
+        padding: 0 rem(12px);
+        border-radius: 5px;
+        border: 1px solid $border-another-gray;
+        margin-right: rem(15px);
+        margin-bottom: rem(10px);
+        color: $text-gray;
+        font-size: rem(15px);
+    }
+
+    &.tag-md-btn {
         font-size: rem(20px);
         font-weight: normal;
         color: $text-gray;
@@ -220,12 +241,15 @@ address {
         line-height: rem(34px);
         padding: 0 rem(13px);
         transition: all .3s ease-out;
-        &.active, &:hover {
+
+        &.active,
+        &:hover {
             background-color: $black;
             color: #FFFFFF;
         }
-   }
-   &.tag-md-white-btn {
+    }
+
+    &.tag-md-white-btn {
         font-size: rem(16px);
         line-height: rem(28px);
         font-weight: normal;
@@ -235,98 +259,126 @@ address {
         border-radius: 2px;
         padding: 0 rem(13px);
         transition: all .3s ease-out;
-        &.active, &:hover {
+
+        &.active,
+        &:hover {
             // background-color: $black;
             // color: #FFFFFF;
         }
-   }
-   &.comment-btn {
-       display: inline-flex;
-       align-items: center;
-       color: $red;
-       &:before {
-           content: '';
-           width: rem(17px);
-           height: rem(17px);
-           margin-right: 5px;
-           display: block;
-           background: url(../images/svg/icons/comments.svg) center center / contain no-repeat;
-       }
-   }
-   &.comment-text-btn {
-       color: $red;
-       font-size: rem(10px);
-       font-weight: normal;
-       font-family: $yeseva;
-       display: flex;
-       align-items: center;
-       &:before {
-           content: '⮩';
-           font-size: rem(26px);
-       }
-   }
-   &.shadowed-btn {
-       line-height: rem(49px);
-       padding: 0 rem(27px);
-       border-radius: 5px;
-       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-       background: #FFFFFF;
-       &--color-red {
-           color: $red;
-       }
-       &--arrow-down {
-           display: flex;
-           align-items: baseline;
-           &:after {
-               content: '';
-               margin-left: 5px;
-               width: 14px;
-               height: 7px;
-               display: block;
-               background: url(../images/svg/icons/arrow-down-small.svg) center center / contain no-repeat;
-           }
-       }
-       &.datepicker-btn {
-           padding: 0 rem(25px);
-           position: relative;
-           &:after {
-               content: '';
-           }
-           &.picker-active {
-               box-shadow: none;
+    }
+
+    &.comment-btn {
+        display: inline-flex;
+        align-items: center;
+        color: $red;
+
+        &:before {
+            content: '';
+            width: rem(17px);
+            height: rem(17px);
+            margin-right: 5px;
+            display: block;
+            background: url(../images/svg/icons/comments.svg) center center / contain no-repeat;
+        }
+    }
+
+    &.comment-text-btn {
+        color: $red;
+        font-size: rem(10px);
+        font-weight: normal;
+        font-family: $yeseva;
+        display: flex;
+        align-items: center;
+
+        &:before {
+            content: '⮩';
+            font-size: rem(26px);
+        }
+    } 
+    
+    &.white-shadowed-red-btn {
+        line-height: rem(49px);
+        display: block;
+        background-color: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        color: $red;
+    }
+
+    &.shadowed-btn {
+        line-height: rem(49px);
+        padding: 0 rem(27px);
+        border-radius: 5px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background: #FFFFFF;
+
+        &--color-red {
+            color: $red;
+        }
+
+        &--arrow-down {
+            display: flex;
+            align-items: baseline;
+
+            &:after {
+                content: '';
+                margin-left: 5px;
+                width: 14px;
+                height: 7px;
+                display: block;
+                background: url(../images/svg/icons/arrow-down-small.svg) center center / contain no-repeat;
+            }
+        }
+
+        &.datepicker-btn {
+            padding: 0 rem(25px);
+            position: relative;
+
+            &:after {
+                content: '';
+            }
+
+            &.picker-active {
+                box-shadow: none;
+
                 .events-filter__datepicker-reset {
                     opacity: 1;
                     width: 16px;
                 }
-               .events-filter__datepicker-wrap {
-                background-color: $border-another-gray;
-               }
-               .datepicker-here {
+
+                .events-filter__datepicker-wrap {
+                    background-color: $border-another-gray;
+                }
+
+                .datepicker-here {
                     max-width: 90px;
-               }
-           }
-           .datepicker-here {
-            //    width: 100%;
-            //    height: 100%;
-            //    z-index: 1;
-               &::placeholder {
-                   color: $black;
-               }
-           }
-       }
-   }
+                }
+            }
+
+            .datepicker-here {
+
+                //    width: 100%;
+                //    height: 100%;
+                //    z-index: 1;
+                &::placeholder {
+                    color: $black;
+                }
+            }
+        }
+    }
 }
 
 .owl-carousel {
     .owl-stage-outer {
         overflow: hidden;
     }
+
     .owl-stage {
         display: flex;
     }
 }
 
-.owl-prev, .owl-next {
+.owl-prev,
+.owl-next {
     display: none;
 }
-
