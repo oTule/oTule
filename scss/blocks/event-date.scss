@@ -1,22 +1,9 @@
-.events-top__cover {
-    height: rem(291px);
-    position: relative;
-    overflow: hidden;
-    margin-bottom: rem(11px);
-}
-
-.events-top__type {
-    position: absolute;
-    top: rem(11px);
-    right: rem(11px);
-}
-
-.events-top__info-wrap {
+.event-date__info-wrap {
     display: flex;
     font-family: $yeseva;
 }
 
-.events-top__date {
+.event-date__date {
     background-color: $red;
     padding: 2px 0 2px 0;
     color: #FFFFFF;
@@ -27,26 +14,26 @@
     margin-right: rem(21px);
 }
 
-.events-top__day {
+.event-date__day {
     font-size: rem(40px);
     line-height: rem(46px);
 }
 
-.events-top__month {
+.event-date__month {
     font-size: rem(24px);
     line-height: rem(28px);
 }
 
-.events-top__info-text {
+.event-date__info-text {
     line-height: rem(22px);
 }
 
-.events-top__info-name {
+.event-date__info-name {
     font-size: rem(19px);
     margin-bottom: rem(10px);
 }
 
-.events-top__info-place {
+.event-date__info-place {
     font-family: $didact;
     font-size: rem(16px);
 }

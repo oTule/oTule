@@ -21,6 +21,9 @@
             margin-right: rem(12px);
         }
     }
+    &--color__red {
+        color: $red;
+    }
 }
 
 .record-aside__tag-btn {
