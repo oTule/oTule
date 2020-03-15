@@ -197,6 +197,13 @@ address {
         border-radius: 5px;
     }
 
+    &.transparent-red-border-btn {
+        line-height: rem(38px);
+        padding: 0 rem(30px);
+        border: 1px solid $red;
+        border-radius: 5px;
+    }
+
     &.gray-back-white-text-btn {
         line-height: rem(40px);
         padding: 0 rem(20px);
