@@ -1,43 +1,5 @@
 .header-up {
     background-color: $black;
     color: #FFFFFF;
-    font-size: rem(16px);
-}
-
-.header-up__container {
-    padding: rem(13px) 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header-up__menu {
-    display: flex;
-    align-items: center;
-}
-
-.header-up__menu-item {
-    margin-right: rem(25px);
-    &:last-child {
-        margin-right: 0;
-    }
-}
-
-.header-up__menu-link {
-    font-family: $didact;
-    color: inherit;
-}
-
-.header-up__auth {
-    color: inherit;
-    display: flex;
-    align-items: center;
-    &:before {
-        content: '';
-        display: block;
-        margin-right: 6px;
-        width: 14px;
-        height: 15px;
-        background: url(../images/svg/icons/user.svg) center center / contain no-repeat;
-    }
+    height: 7px;
 }

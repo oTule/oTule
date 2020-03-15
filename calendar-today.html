@@ -14,27 +14,6 @@
     <div class="wrapper">
         <header class="header">
             <div class="header-up">
-                <div class="container header-up__container">
-                    <nav class="header-up__nav">
-                        <ul class="header-up__menu">
-                            <li class="header-up__menu-item">
-                                <a href="#" class="header-up__menu-link">О портале</a>
-                            </li>
-                            <li class="header-up__menu-item">
-                                <a href="#" class="header-up__menu-link">Рекламодателям</a>
-                            </li>
-                            <li class="header-up__menu-item">
-                                <a href="#" class="header-up__menu-link">Письмо редакции</a>
-                            </li>
-                            <li class="header-up__menu-item">
-                                <a href="styles.html" class="header-up__menu-link">!стили\типографика\иконки!</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <button class="btn header-up__auth js-authPopup">
-                        Авторизоваться
-                    </button>
-                </div>
             </div>
             <div class="header-down">
                 <div class="container header-down__container">
@@ -42,34 +21,49 @@
                         <a href="/" class="header-down__logo">
                             <img src="images/svg/icons/logoBlack.svg" alt="" class="img-fluid">
                         </a>
-                        <div class="header-down__calendar-btn">
-                            <a href="calendar.html" class="header-down__calendar-link">Календарь событий</a>
-                        </div>
-                    </div>
-                    <div class="header-down__col">
                         <nav class="header-down__nav">
                             <ul class="header-down__menu">
+                                <li class="header-down__menu-item">
+                                    <a href="calendar.html" class="header-down__calendar-link">Календарь событий</a>
+                                </li>
                                 <li class="header-down__menu-item">
                                     <a href="news-index.html" class="header-down__menu-link">Новости</a>
                                 </li>
                                 <li class="header-down__menu-item">
-                                    <a href="#" class="header-down__menu-link">Статьи и блоги</a>
+                                    <a href="articles.html" class="header-down__menu-link">Статьи</a>
                                 </li>
                                 <li class="header-down__menu-item">
-                                    <a href="#" class="header-down__menu-link">Справочная</a>
+                                    <a href="reviews.html" class="header-down__menu-link">Обзоры</a>
+                                </li>
+                                <li class="header-down__menu-item">
+                                    <a href="#" class="header-down__menu-link">Рекламодателям</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                     <div class="header-down__col">
+                        <button type="button" class="header-down__dropdown btn">
+                            <nav class="header-down__submenu">
+                                <a href="links.html" class="header-down__submenu-link">!Карта сайта!</a>
+                                <a href="#" class="header-down__submenu-link">Погода</a>
+                                <a href="#" class="header-down__submenu-link">Расписание движения</a>
+                                <a href="#" class="header-down__submenu-link">Расписание автовокзала</a>
+                                <a href="#" class="header-down__submenu-link">Расписание ж/д вокзала</a>
+                                <a href="#" class="header-down__submenu-link">Письмо редакции</a>
+                                <a href="#" class="header-down__submenu-link">О Туле</a>
+                            </nav>
+                        </button>
+                        <a href="#" class="header-down__posting-btn btn transparent-red-border-btn">
+                            Предложить событие
+                        </a>
                         <form action="" class="header-down__search-form">
-                            <input type="text" class="header-down__search-input">
-                            <button class="btn header-down__search-btn"><img src="images/svg/icons/search.svg" alt=""
+                            <input type="text" class="header-down__search-input" placeholder="Искать">
+                            <button type="submit" class="btn header-down__search-btn"><img src="images/svg/icons/search.svg" alt=""
                                     class="img-fluid"></button>
                         </form>
-                        <button type="button" class="header-down__posting-btn btn transparent-gray-border-btn">
-                            Запостить
-                        </button>
+                        <a href="/personal/cabinet/" class="header-down__auth-btn btn" data-popup="auth">
+
+                        </a>
                     </div>
                 </div>
             </div>

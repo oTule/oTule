@@ -13,6 +13,7 @@
 .header-down__col {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .header-down__logo {
@@ -39,7 +40,7 @@
 }
 
 .header-down__menu-item {
-    margin-right: rem(47px);
+    margin-right: rem(20px);
     &:last-child {
         margin-right: 0;
     }
@@ -50,13 +51,25 @@
 }
 
 .header-down__search-form {
+    position: relative;
     background-color: $bgc-gray;
     border-radius: 5px;
     padding: 9px;
     width: 40px;
     height: 40px;
-    position: relative;
-    margin-right: rem(20px);
+    margin-right: 7px;
+    &.active {
+        position: absolute;
+        width: 100%;
+        right: 40px;
+        z-index: 2;
+        .header-down__search-input {
+            font-size: 18px;
+            &::placeholder {
+                font-size: 18px;
+            }
+        }
+    }
 }
 
 .header-down__search-input {
@@ -64,6 +77,10 @@
     outline: none;
     background-color: transparent;
     width: 100%;
+    font-size: 0;
+    &::placeholder {
+        font-size: 0;
+    }
 }
 
 .header-down__search-btn {
@@ -71,4 +88,60 @@
     right: 9px;
     top: 9px;
     padding: 0;
+}
+
+.header-down__posting-btn {
+    margin-right: 8px;
+}
+
+.header-down__dropdown {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(../images/svg/icons/more.svg) center center / contain no-repeat;
+    border-radius: 5px;
+    margin-right: 67px;
+    &:hover {
+        .header-down__submenu {
+            display: block;
+        }
+    }
+}
+
+.header-down__submenu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: $white;
+    border-radius: 5px;
+    padding: rem(17px) rem(20px);
+    text-align: left;
+    border: 1px solid $border-another-gray;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.14);
+    &:before {
+        content: '';
+        width: 100%;
+        height: 20px;
+        display: block;
+        position: absolute;
+        top: -17px;
+        left: 0;
+    }
+}
+
+.header-down__submenu-link {
+    white-space: nowrap;
+    display: block;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.header-down__auth-btn {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(../images/svg/icons/login.svg) center center / contain no-repeat;
 }
