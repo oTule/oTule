@@ -1,5 +1,8 @@
 .inner__page-content {
     padding-top: rem(16px);
+    &--padding-top__null {
+        padding-top: 0;
+    }
 }
 
 .inner__page-title {
