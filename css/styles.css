@@ -9040,6 +9040,14 @@ address {
     .btn.tag-md-btn.active, .btn.tag-md-btn:hover {
       background-color: #242226;
       color: #FFFFFF; }
+  .btn.auto-width-red-btn {
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #F51212;
+    width: 100%;
+    padding: 0 10px;
+    font-weight: normal; }
   .btn.tag-md-white-btn {
     font-size: 1rem;
     line-height: 1.75rem;
@@ -9961,28 +9969,16 @@ address {
     text-decoration: none;
     color: #8D8D8D; }
   .footer__menu-link--another {
-    margin-right: 1.625rem; }
+    margin-right: 3.625rem; }
     .footer__menu-link--another:last-child {
       margin-right: 0; }
-
-.footer__menu-list--two-columns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
-  .footer__menu-list--two-columns .footer__menu-item {
-    min-width: 150px; }
 
 .footer__age-limit {
   font-family: "Yeseva One", "Comic Sans MS", "Monaco", cursive;
   font-size: 2.25rem;
   line-height: 2.625rem;
   color: #7C7C7C;
-  width: 18%; }
+  width: 17%; }
 
 .footer__subscribe-wrap {
   position: relative;
@@ -11150,3 +11146,53 @@ address {
   font-family: "Yeseva One", "Comic Sans MS", "Monaco", cursive;
   font-size: 1.25rem;
   line-height: 1.4375rem; }
+
+.register {
+  min-height: 55.625rem;
+  background: url(../images/register/bg.png) center center/cover no-repeat;
+  padding: 3.125rem 0; }
+
+.register__form {
+  margin-left: auto;
+  background-color: #ffffff;
+  padding: 1.5625rem 1.9375rem 2.625rem 1.9375rem;
+  max-width: 380px;
+  border-radius: 5px; }
+
+.register__form-title {
+  margin-bottom: 1.875rem; }
+
+.register__row {
+  width: 100%;
+  margin-bottom: 9px; }
+  .register__row--margin_bottom {
+    margin-bottom: 27px; }
+
+.register__input {
+  width: 100%;
+  line-height: 49px;
+  font-size: 18px;
+  padding-left: 15px;
+  border: 1px solid #C0C0C0;
+  border-radius: 5px; }
+  .register__input::-webkit-input-placeholder {
+    color: #7C7C7C; }
+  .register__input:-ms-input-placeholder {
+    color: #7C7C7C; }
+  .register__input::-ms-input-placeholder {
+    color: #7C7C7C; }
+  .register__input::placeholder {
+    color: #7C7C7C; }
+
+.register__form-subtitle {
+  text-align: center;
+  margin-bottom: 28px; }
+
+.register__policies {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #7C7C7C; }
+
+.register__policy-link {
+  color: #242226; }

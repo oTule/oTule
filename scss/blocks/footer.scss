@@ -54,7 +54,7 @@
         color: $footer-text-gray;
     }
     &--another {
-        margin-right: rem(26px);
+        margin-right: rem(58px);
         &:last-child {
             margin-right: 0;
         }
@@ -62,14 +62,7 @@
 }
 
 .footer__menu-list {
-    &--two-columns {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        .footer__menu-item {
-            min-width: 150px;
-        }
-    }
+    
 }
 
 .footer__age-limit {
@@ -77,7 +70,7 @@
     font-size: rem(36px);
     line-height: rem(42px);
     color: $text-gray;
-    width: 18%;
+    width: 17%;
 }
 
 .footer__subscribe-wrap {
