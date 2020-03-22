@@ -256,6 +256,16 @@ address {
         }
     }
 
+    &.auto-width-red-btn {
+        line-height: 49px;
+        text-transform: uppercase;
+        color: $white;
+        background-color: $red;
+        width: 100%;
+        padding: 0 10px;
+        font-weight: normal;
+    }
+
     &.tag-md-white-btn {
         font-size: rem(16px);
         line-height: rem(28px);

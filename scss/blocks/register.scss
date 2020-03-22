@@ -1,0 +1,95 @@
+.register {
+    min-height: rem(890px);
+    background: url(../images/register/bg.png) center center / cover no-repeat;
+    padding: rem(50px) 0;
+    &--success {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.register__form {
+    margin-left: auto;
+    background-color: $white;
+    padding: rem(25px) rem(31px) rem(42px) rem(31px);
+    max-width: 380px;
+    border-radius: 5px;
+    label.error {
+        width: 80%;
+        position: absolute;
+        text-align: center;
+        margin-top: 10px;
+        padding: 5px;
+        font-size: 14px;
+        // border: 1px solid $red;
+        border-radius: 5px;
+        background-color: $white;
+        left: 50%;
+        top:70%;
+        transform: translateX(-50%);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+        z-index: 2;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -4px;
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+            width: 8px;
+            height: 8px;
+            background-color: $white;
+        }
+    }
+}
+
+.register__form-title {
+    margin-bottom: rem(30px);
+}
+
+.register__row {
+    position: relative;
+    width: 100%;
+    margin-bottom: 9px;
+    &--margin_bottom {
+        margin-bottom: 27px;
+    }
+}
+
+.register__input {
+    width: 100%;
+    line-height: 49px;
+    font-size: 18px;
+    padding-left: 15px;
+    border: 1px solid $text-gray-more;
+    border-radius: 5px;
+    &::placeholder {
+        color: $text-gray;
+    }
+}
+
+.register__form-subtitle {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.register__policies {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: $text-gray;
+}
+
+.register__policy-link {
+    color: $black;
+}
+
+.register__success-picture {
+    max-width: 40px;
+    margin: 0 auto 16px;
+}
+
+.register__success-text {
+    text-align: center;
+    line-height: 24px;
+}
