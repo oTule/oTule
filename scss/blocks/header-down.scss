@@ -102,7 +102,7 @@
     background: url(../images/svg/icons/more.svg) center center / contain no-repeat;
     border-radius: 5px;
     margin-right: 67px;
-    &:hover {
+    &:hover, &:focus {
         .header-down__submenu {
             display: block;
         }

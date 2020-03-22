@@ -10,7 +10,7 @@ function closeOnDocumentClick(clickElement,closeElement) {
     if (!closeElement) {
         closeElement = clickElement;
     }
-    $(document).click(function (e) {
+    $(document).click(function (e) {        
         if (!clickElement.is(e.target)
             && clickElement.has(e.target).length === 0
         ) {
@@ -19,6 +19,32 @@ function closeOnDocumentClick(clickElement,closeElement) {
     })
 }
 
+/**Попап авторизации */
+$(function () {
+    
+    $('.popup').on('click', function(e) {
+        if($(this).is(e.target)) {
+            $(this).removeClass('active');
+        }        
+    })
+
+    $('.popup__close').on('click', function() {
+        
+        $(this).closest('.popup').removeClass('active');
+    })
+
+    $('.js-popupOpen').on('click', function (e) {
+        e.preventDefault();
+
+        var popupName = $(this).attr('data-popup'),
+            currentPopup = $('[data-popup-content='+popupName+']');
+        
+        currentPopup.addClass('active');
+    });
+    
+});
+
+/**Слайдеры */
 var owl = $('.owl-carousel');
 owl.owlCarousel({
     items:1,
@@ -48,9 +74,7 @@ function owlUpdateSlide(event) {
 }
 
 $('.events-filter__datepicker-input').on('focusin', function () {
-    $(this).closest('.datepicker-btn').addClass('picker-active');
-    console.log($(this).closest('.datepicker-btn'));
-    
+    $(this).closest('.datepicker-btn').addClass('picker-active');    
 });
 
 $('.events-filter__datepicker-input').on('focusout', function () {    
@@ -71,7 +95,6 @@ $(function(){
             e.preventDefault();
             $(this).parent().addClass('active');            
         } else {
-            console.log($(this).parent());
             
             $(this).parent().submit();
         }

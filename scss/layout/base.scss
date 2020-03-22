@@ -188,6 +188,10 @@ address {
         border: 1px solid $border-another-gray;
         border-radius: 5px;
         line-height: rem(55px);
+        transition: background .3s ease-out;
+        &:hover,&:focus,&:active {
+            background-color: darken($color: $bgc-gray, $amount: 10%);
+        }
     }
 
     &.transparent-gray-border-btn {
@@ -210,14 +214,22 @@ address {
         border-radius: 5px;
         color: #FFFFFF;
         background-color: $black;
+        transition: background .3s ease-out;
+        &:hover,&:focus,&:active {
+            background-color: darken($color: $black, $amount: 10%);
+        }
     }
 
     &.red-hashtag-btn {
         line-height: rem(28px);
         padding: 0 rem(10px);
-        background-color: red;
+        background-color: $red;
         border-radius: 3px;
         color: #FFFFFF;
+        transition: background .3s ease-out;
+        &:hover,&:focus,&:active {
+            background-color: darken($color: $red, $amount: 10%);
+        }
     }
 
     &.gray-btn {
@@ -225,6 +237,10 @@ address {
         border: 1px solid $border-another-gray;
         background-color: $bgc-gray;
         padding: 0 rem(50px);
+        transition: background .3s ease-out;
+        &:hover,&:focus,&:active {
+            background-color: darken($color: $bgc-gray, $amount: 10%);
+        }
     }
 
     &.tag-white-btn {
@@ -236,6 +252,10 @@ address {
         margin-bottom: rem(10px);
         color: $text-gray;
         font-size: rem(15px);
+        transition: border .3s ease-out;
+        &:hover,&:focus,&:active {
+            border-color: darken($color: $border-another-gray, $amount: 10%);
+        }
     }
 
     &.tag-md-btn {
@@ -248,7 +268,6 @@ address {
         line-height: rem(34px);
         padding: 0 rem(13px);
         transition: all .3s ease-out;
-
         &.active,
         &:hover {
             background-color: $black;
@@ -264,6 +283,10 @@ address {
         width: 100%;
         padding: 0 10px;
         font-weight: normal;
+        transition: background .3s ease-out;
+        &:hover,&:focus,&:active {
+            background-color: darken($color: $red, $amount: 10%);
+        }
     }
 
     &.tag-md-white-btn {
@@ -271,16 +294,14 @@ address {
         line-height: rem(28px);
         font-weight: normal;
         color: $black;
-        background-color: #FFFFFF;
+        background-color: $white;
         border: transparent;
         border-radius: 2px;
         padding: 0 rem(13px);
         transition: all .3s ease-out;
-
-        &.active,
-        &:hover {
-            // background-color: $black;
-            // color: #FFFFFF;
+        transition: background .3s ease-out;
+        &:hover,&:focus,&:active {
+            background-color: darken($color:  $white, $amount: 10%);
         }
     }
 
@@ -320,6 +341,10 @@ address {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         color: $red;
+        transition: background .3s ease-out;
+        &:hover,&:focus,&:active {
+            background-color: darken($color:  $white, $amount: 10%);
+        }
     }
 
     &.shadowed-btn {
