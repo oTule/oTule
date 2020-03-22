@@ -11151,6 +11151,13 @@ address {
   min-height: 55.625rem;
   background: url(../images/register/bg.png) center center/cover no-repeat;
   padding: 3.125rem 0; }
+  .register--success {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
 
 .register__form {
   margin-left: auto;
@@ -11158,11 +11165,41 @@ address {
   padding: 1.5625rem 1.9375rem 2.625rem 1.9375rem;
   max-width: 380px;
   border-radius: 5px; }
+  .register__form label.error {
+    width: 80%;
+    position: absolute;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    left: 50%;
+    top: 70%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    z-index: 2; }
+    .register__form label.error:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -4px;
+      left: 50%;
+      -webkit-transform: translateX(-50%) rotate(45deg);
+      -ms-transform: translateX(-50%) rotate(45deg);
+      transform: translateX(-50%) rotate(45deg);
+      width: 8px;
+      height: 8px;
+      background-color: #ffffff; }
 
 .register__form-title {
   margin-bottom: 1.875rem; }
 
 .register__row {
+  position: relative;
   width: 100%;
   margin-bottom: 9px; }
   .register__row--margin_bottom {
@@ -11196,3 +11233,11 @@ address {
 
 .register__policy-link {
   color: #242226; }
+
+.register__success-picture {
+  max-width: 40px;
+  margin: 0 auto 16px; }
+
+.register__success-text {
+  text-align: center;
+  line-height: 24px; }
