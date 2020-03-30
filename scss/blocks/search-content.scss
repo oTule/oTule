@@ -1,0 +1,20 @@
+.search-content {
+    min-height: 220px;
+}
+
+.search-content__element {
+    align-items: center;
+    margin-bottom: rem(55px);
+}
+
+.search-content__title {
+    font-family: $yeseva;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 7px;
+}
+
+.search-content__empty {
+    text-align: center;
+    font-size: 24px;
+}

@@ -138,4 +138,10 @@
     <path fill-rule="evenodd" clip-rule="evenodd" d="M.44 13.167a1.5 1.5 0 1 0 2.12 2.122l5.304-5.304 5.303 5.304a1.5 1.5 0 1 0 2.122-2.121L9.985 7.864l5.304-5.303A1.5 1.5 0 1 0 13.167.439L7.864 5.743 2.56.44A1.5 1.5 0 0 0 .439 2.56l5.304 5.304-5.304 5.303z"
       fill="currentColor"></path>
   </symbol>
+   <symbol viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg" id="chevron-left-bold">
+    <path d="M8.772 2.28L4.228 6.824l4.544 4.544" stroke="currentColor" stroke-width="5"></path>
+  </symbol>
+  <symbol viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg" id="chevron-right-bold">
+    <path d="M2 2l4.544 4.544L2 11.088" stroke="currentColor" stroke-width="5"></path>
+  </symbol>
 </svg>

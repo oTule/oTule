@@ -1,0 +1,23 @@
+.search-head__form {
+    margin-bottom: rem(25px);
+}
+
+.search-head__input {
+    background-color: $white;
+    border-radius: 5px;
+    border: 1px solid $border-another-gray;
+    height: rem(40px);
+    line-height: rem(40px);
+    width: 100%;
+}
+
+.search-head__submit {
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    padding: 0;
+}
+
+.search-head__form-result {
+    color: $red;
+}
