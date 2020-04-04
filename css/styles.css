@@ -9446,6 +9446,14 @@ address {
     outline: 1px solid #F51212;
     border-color: transparent; }
 
+.ot-wysiwyg h2 {
+  font-family: "Yeseva One", "Comic Sans MS", "Monaco", cursive;
+  margin-bottom: 20px; }
+
+.ot-wysiwyg p {
+  line-height: 24px;
+  margin-bottom: 13px; }
+
 .main-up {
   padding: 1.875rem 0; }
 
@@ -11922,3 +11930,12 @@ address {
 
 .about__privacy-link {
   text-decoration: underline; }
+
+.privacy__main-title {
+  font-family: "Yeseva One", "Comic Sans MS", "Monaco", cursive;
+  font-size: 48px;
+  line-height: 55px;
+  margin-bottom: 40px; }
+
+.privacy {
+  padding-bottom: 130px; }
