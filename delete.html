@@ -70,70 +70,30 @@
         </header>
 
         <main class="page-content inner__page-content inner__page-content--padding-top__null">
-            <h1 class="inner__page-title">Мы рады сотрудничеству</h1>
-            <section class="section suggest">
-                <div class="container suggest__container">
-                    <div class="suggest__desc">Делится и рассказывать о интересном из жизни Тулы это наше призвание и мы
-                        хотим привлечь к этому процессу больше внимния! Если вам есть о чем рассказать, то смело
-                        присылайте это в нашу редацию, мы с радостью расскажем об этом всем!</div>
-                    <div class="suggest__form-wrap">
-                        <div class="suggest__before-form">Предложить событие</div>
-                        <form action="" class="suggest__form js-needValidate" enctype="multipart/form-data">
-                            <div class="suggest__data-row">
-                                <div class="suggest__data-title">Контактные данные</div>
-                                <div class="suggest__input-row">
-                                    <div class="suggest__input-wrap  ot-form__control">
-                                        <input type="text" name="NAME" class="suggest__input-text" placeholder="Имя">
-                                    </div>
-                                    <div class="suggest__input-wrap">
-                                        <input type="text" name="PHONE" class="suggest__input-text" placeholder="Телефон">
-                                    </div>
-                                </div>
-                                <div class="suggest__input-row">
-                                    <div class="suggest__input-wrap">
-                                        <input type="text" name="SECOND_NAME" class="suggest__input-text" placeholder="Фамилия">
-                                    </div>
-                                    <div class="suggest__input-wrap">
-                                        <input type="text" name="EMAIL" class="suggest__input-text" placeholder="E-mail">
-                                    </div>
-                                </div>
+            <h1 class="inner__page-title">Мой кабинет</h1>
+            <section class="section delete-acc">
+                <div class="container delete-acc__container">
+                    <form action="" class="delete-acc__form js-needValidate">
+                        <div class="delete-acc__form-title">
+                            Ваш аккаунт удален, сожалеем что вы покидаете нас
+                        </div>
+                        <div class="delete-acc__text">
+                            Ваши учетные данные будут хранится у нас в течении 30 дней. Если вы пожелаете вернуться, то
+                            просто введите ваши логин и пароль для восстановления аккауна.
+                        </div>
+                        <div class="delete-acc__inputs">
+                            <div class="delete-acc__inputs-title">Восстановить страницу?</div>
+                            <div class="ot-form__control delete-acc__input-row">
+                                <input type="text" name="LOGIN" class="ot-form__input-text delete-acc__input" placeholder="Логин">
                             </div>
-                            <div class="suggest__data-row">
-                                <div class="suggest__data-title">Выберите рубруку</div>
-                                <div class="suggest__input-wrap suggest__input-wrap--select js-select">
-                                    <select name="HEADING" id="" class="suggest__select">
-                                        <option value="">Новости</option>
-                                        <option value="">Статьи</option>
-                                        <option value="">Обзоры</option>
-                                    </select>
-                                </div>
+                            <div class="ot-form__control delete-acc__input-row">
+                                <input type="password" name="PASSWORD" class="ot-form__input-text delete-acc__input" placeholder="Пароль">
                             </div>
-                            <div class="suggest__data-row">
-                                <div class="suggest__data-title suggest__data-title--imaged-title">
-                                    <div class="suggest__title-image">
-                                        <img src="images/svg/icons/imageMiniature.svg" class="img-fluid" alt="">
-                                    </div>
-                                    Загрузите фото
-                                </div>
-                                <div class="suggest__input-wrap suggest__input-wrap--file">
-                                    <input class="suggest__input-file" type="file" id="fileMulti" name="fileMulti" multiple accept="image/*,image/jpeg">
-                                    <label class="suggest__file-fake" for="fileMulti">ДВЕРЬ МНЕ ЗАГРУЗИ</label>
-                                </div>
-                                <div class="suggest__input-wrap suggest__input-wrap--photo-preview">
-                                    <div class="suggest__pictures" id="outputMulti"></div>
-                                </div>
+                            <div class="delete-acc__submit-wrap">
+                                <button class="btn auto-width-red-btn auto-width-red-btn--no-uppercase">Восстановить</button>
                             </div>
-                            <div class="suggest__data-row">
-                                <div class="suggest__data-title">Ваше сообщение</div>
-                                <div class="suggest__input-row suggest__input-row--textarea">
-                                    <textarea name="" class="suggest__textarea" placeholder="Напиши что-нибудь"></textarea>
-                                </div>
-                            </div>
-                            <div class="suggest__button-row">
-                                <button class="btn auto-width-red-btn">отправить</button>
-                            </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </section>
 

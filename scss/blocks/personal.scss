@@ -1,0 +1,75 @@
+.personal__container {
+    max-width: 780px;
+}
+
+.personal__form {
+    background-color: $white;
+    border: 1px solid $border-another-gray;
+    border-radius: 5px;
+}
+
+.personal__form-title {
+    font-size: 24px;
+    line-height: 31px;
+    text-align-last: left;
+}
+
+.personal__row {
+    padding: 25px 30px;
+    border-bottom: 1px solid $border-another-gray;
+    display: flex;
+    align-items: center;
+    &--hidden {
+        display: none;
+        background-color: $bgc-gray;
+    }
+}
+
+.personal__row-title {
+    width: 28%;
+    color: $text-gray;
+}
+
+.personal__row-middle {
+    width: 46%;
+}
+
+.personal__row-end {
+    width: 26%;
+    text-align: right;
+    color: $red;
+}
+
+.personal__row-center {
+    margin-left: 28%;
+    width: 46%;
+}
+
+.personal__link-btn {
+    color: inherit;
+}
+
+.personal__input-row {
+    margin-bottom: 15px;
+}
+
+.personal__input {
+    border: 1px solid $border-another-gray;
+}
+
+.personal__big-row {
+    padding: rem(42px) rem(58px) rem(45px) rem(30px);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.personal__gray-row {
+    background-color: $border-another-gray;
+    text-align: center;
+    padding: 26px;
+    line-height: 24px;
+}
+
+.personal__delete-link {
+    text-decoration: underline;
+}
