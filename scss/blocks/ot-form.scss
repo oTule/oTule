@@ -1,0 +1,17 @@
+.ot-form__row {
+    position: relative;
+    width: 100%;
+    margin-bottom: 9px;
+}
+
+.ot-form__input-text {
+    width: 100%;
+    line-height: 49px;
+    font-size: 18px;
+    padding-left: 15px;
+    border: 1px solid $text-gray-more;
+    border-radius: 5px;
+    &::placeholder {
+        color: $text-gray;
+    }
+}
