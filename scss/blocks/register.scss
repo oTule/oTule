@@ -57,15 +57,6 @@
 }
 
 .register__input {
-    width: 100%;
-    line-height: 49px;
-    font-size: 18px;
-    padding-left: 15px;
-    border: 1px solid $text-gray-more;
-    border-radius: 5px;
-    &::placeholder {
-        color: $text-gray;
-    }
 }
 
 .register__form-subtitle {

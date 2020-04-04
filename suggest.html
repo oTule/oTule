@@ -78,30 +78,30 @@
                         присылайте это в нашу редацию, мы с радостью расскажем об этом всем!</div>
                     <div class="suggest__form-wrap">
                         <div class="suggest__before-form">Предложить событие</div>
-                        <form action="" class="suggest__form" enctype="multipart/form-data">
+                        <form action="" class="suggest__form js-needValidate" enctype="multipart/form-data">
                             <div class="suggest__data-row">
                                 <div class="suggest__data-title">Контактные данные</div>
                                 <div class="suggest__input-row">
                                     <div class="suggest__input-wrap">
-                                        <input type="text" class="suggest__input-text" placeholder="Имя">
+                                        <input type="text" name="NAME" class="suggest__input-text" placeholder="Имя">
                                     </div>
                                     <div class="suggest__input-wrap">
-                                        <input type="text" class="suggest__input-text" placeholder="Телефон">
+                                        <input type="text" name="PHONE" class="suggest__input-text" placeholder="Телефон">
                                     </div>
                                 </div>
                                 <div class="suggest__input-row">
                                     <div class="suggest__input-wrap">
-                                        <input type="text" class="suggest__input-text" placeholder="Фамилия">
+                                        <input type="text" name="SECOND_NAME" class="suggest__input-text" placeholder="Фамилия">
                                     </div>
                                     <div class="suggest__input-wrap">
-                                        <input type="text" class="suggest__input-text" placeholder="E-mail">
+                                        <input type="text" name="EMAIL" class="suggest__input-text" placeholder="E-mail">
                                     </div>
                                 </div>
                             </div>
                             <div class="suggest__data-row">
                                 <div class="suggest__data-title">Выберите рубруку</div>
-                                <div class="suggest__input-wrap suggest__input-wrap--select">
-                                    <select name="" id="" class="suggest__select">
+                                <div class="suggest__input-wrap suggest__input-wrap--select js-select">
+                                    <select name="HEADING" id="" class="suggest__select">
                                         <option value="">Новости</option>
                                         <option value="">Статьи</option>
                                         <option value="">Обзоры</option>
@@ -116,8 +116,8 @@
                                     Загрузите фото
                                 </div>
                                 <div class="suggest__input-wrap suggest__input-wrap--file">
-                                    <label for="fileMulti">ДВЕРЬ МНЕ ЗАГРУЗИ</label>
                                     <input class="suggest__input-file" type="file" id="fileMulti" name="fileMulti" multiple accept="image/*,image/jpeg">
+                                    <label class="suggest__file-fake" for="fileMulti">ДВЕРЬ МНЕ ЗАГРУЗИ</label>
                                 </div>
                                 <div class="suggest__input-wrap suggest__input-wrap--photo-preview">
                                     <div class="suggest__pictures" id="outputMulti"></div>
@@ -125,10 +125,8 @@
                             </div>
                             <div class="suggest__data-row">
                                 <div class="suggest__data-title">Ваше сообщение</div>
-                                <div class="suggest__input-row">
-                                    <textarea name="" class="suggest__textarea" placeholder="Напиши что-нибудь">
-
-                                    </textarea>
+                                <div class="suggest__input-row suggest__input-row--textarea">
+                                    <textarea name="" class="suggest__textarea" placeholder="Напиши что-нибудь"></textarea>
                                 </div>
                             </div>
                             <div class="suggest__button-row">
@@ -328,6 +326,7 @@
     <script src="js/libs/jquery.maskedinput.min.js"></script>
     <script src="js/libs/owl.carousel.min.js"></script>
     <script src="js/libs/datepicker.min.js"></script>
+    <script src="js/libs/jquery-validation-1.19.1/jquery.validate.js"></script>
     <script src="js/main.js"></script>
 </body>
 
