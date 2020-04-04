@@ -287,6 +287,9 @@ address {
         &:hover,&:focus,&:active {
             background-color: darken($color: $red, $amount: 10%);
         }
+        &--no-uppercase {
+            text-transform: unset;
+        }
     }
     &.red-btn {
         line-height: 40px;

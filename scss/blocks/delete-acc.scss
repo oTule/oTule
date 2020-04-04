@@ -1,0 +1,44 @@
+.delete-acc__container {
+    max-width: 780px;
+}
+
+.delete-acc__form {
+    background-color: $white;
+    border: 1px solid $border-another-gray;
+    border-radius: 5px;
+    padding-bottom: 75px;
+}
+
+.delete-acc__form-title {
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    padding: 26px;
+    border-bottom: 1px solid $border-another-gray;
+    margin-bottom: 25px;
+}
+
+.delete-acc__text {
+    text-align: center;
+    max-width: 475px;
+    line-height: 24px;
+    margin: 0 auto 57px auto;
+}
+
+.delete-acc__inputs {
+    max-width: 332px;
+    margin: 0 auto;
+}
+
+.delete-acc__inputs-title {
+    color: $red;
+    margin-bottom: 15px;
+}
+
+.delete-acc__input-row {
+    margin-bottom: 15px;
+}
+
+.delete-acc__submit-wrap {
+    margin-top: 30px;
+}

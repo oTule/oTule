@@ -234,7 +234,6 @@ $(function () {
     $('.personal__link-btn').on('click', function (e) {
         e.preventDefault();
         var tabName = $(this).attr('data-row-btn');
-        $('.personal__link-btn').attr('disabled', 'disabled');
         if ($(this).hasClass('active')) {
             $(this).removeClass('active');
             $('[data-row='+tabName+']').slideUp();
@@ -244,5 +243,6 @@ $(function () {
             $('[data-row]').slideUp();
             $('[data-row='+tabName+']').slideDown();
         }
+        
     })
 })
