@@ -9446,6 +9446,14 @@ address {
     outline: 1px solid #F51212;
     border-color: transparent; }
 
+.ot-wysiwyg h2 {
+  font-family: "Yeseva One", "Comic Sans MS", "Monaco", cursive;
+  margin-bottom: 20px; }
+
+.ot-wysiwyg p {
+  line-height: 24px;
+  margin-bottom: 13px; }
+
 .main-up {
   padding: 1.875rem 0; }
 
@@ -11886,3 +11894,48 @@ address {
 
 .delete-acc__submit-wrap {
   margin-top: 30px; }
+
+.about {
+  background: url(../images/about/bg.png) right bottom/45% no-repeat; }
+
+.about__wrap {
+  max-width: 66%;
+  padding: 90px 0; }
+
+.about__main-title {
+  font-family: "Yeseva One", "Comic Sans MS", "Monaco", cursive;
+  font-size: 48px;
+  line-height: 55px;
+  margin-bottom: 38px; }
+
+.about__desc {
+  line-height: 24px;
+  margin-bottom: 42px; }
+  .about__desc p {
+    margin-bottom: 13px; }
+
+.about__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 42px; }
+
+.about__button-wrap {
+  margin-right: 20px; }
+  .about__button-wrap:last-child {
+    margin-right: 0; }
+
+.about__privacy-link {
+  text-decoration: underline; }
+
+.privacy__main-title {
+  font-family: "Yeseva One", "Comic Sans MS", "Monaco", cursive;
+  font-size: 48px;
+  line-height: 55px;
+  margin-bottom: 40px; }
+
+.privacy {
+  padding-bottom: 130px; }

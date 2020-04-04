@@ -1,0 +1,40 @@
+.about {
+    background: url(../images/about/bg.png) right bottom / 45% no-repeat;
+}
+
+.about__wrap {
+    max-width: 66%;
+    padding: 90px 0;
+}
+
+.about__main-title {
+    font-family: $yeseva;
+    font-size: 48px;
+    line-height: 55px;
+    margin-bottom: 38px;
+}
+
+.about__desc {
+    line-height: 24px;
+    margin-bottom: 42px;
+    p {
+        margin-bottom: 13px;
+    }
+}
+
+.about__buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 42px;
+}
+
+.about__button-wrap {
+    margin-right: 20px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.about__privacy-link {
+    text-decoration: underline;
+}
