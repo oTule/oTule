@@ -107,7 +107,7 @@ $(function(){
 $('.js-select').on('change load', function(){
     $('option').removeClass('active');
     $(this).find('option:selected').addClass('active');
-})
+});
 
     /**JQuery Validate кастомные настройки */
     (function( factory ) {
@@ -229,4 +229,20 @@ function handleFileSelectMulti(evt) {
   }
 
   
-
+// Обработка табов в кабинете
+$(function () {
+    $('.personal__link-btn').on('click', function (e) {
+        e.preventDefault();
+        var tabName = $(this).attr('data-row-btn');
+        $('.personal__link-btn').attr('disabled', 'disabled');
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $('[data-row='+tabName+']').slideUp();
+        } else {
+            $('.personal__link-btn.active').removeClass('active');
+            $(this).addClass('active');
+            $('[data-row]').slideUp();
+            $('[data-row='+tabName+']').slideDown();
+        }
+    })
+})

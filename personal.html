@@ -70,70 +70,118 @@
         </header>
 
         <main class="page-content inner__page-content inner__page-content--padding-top__null">
-            <h1 class="inner__page-title">Мы рады сотрудничеству</h1>
-            <section class="section suggest">
-                <div class="container suggest__container">
-                    <div class="suggest__desc">Делится и рассказывать о интересном из жизни Тулы это наше призвание и мы
-                        хотим привлечь к этому процессу больше внимния! Если вам есть о чем рассказать, то смело
-                        присылайте это в нашу редацию, мы с радостью расскажем об этом всем!</div>
-                    <div class="suggest__form-wrap">
-                        <div class="suggest__before-form">Предложить событие</div>
-                        <form action="" class="suggest__form js-needValidate" enctype="multipart/form-data">
-                            <div class="suggest__data-row">
-                                <div class="suggest__data-title">Контактные данные</div>
-                                <div class="suggest__input-row">
-                                    <div class="suggest__input-wrap  ot-form__control">
-                                        <input type="text" name="NAME" class="suggest__input-text" placeholder="Имя">
-                                    </div>
-                                    <div class="suggest__input-wrap">
-                                        <input type="text" name="PHONE" class="suggest__input-text" placeholder="Телефон">
-                                    </div>
+            <h1 class="inner__page-title">Мой кабинет</h1>
+            <section class="section personal">
+                <div class="container personal__container">
+                    <form action="" class="personal__form">
+                        <div class="personal__form-title personal__row">Общие настройки</div>
+                        <div class="personal__row-cluster">
+                            <div class="personal__row">
+                                <div class="personal__row-title">Пароль</div>
+                                <div class="personal__row-middle">Обновлен вчера</div>
+                                <div class="personal__row-end">
+                                    <a href="#" class="personal__link-btn" data-row-btn="pass">Изменить</a>
                                 </div>
-                                <div class="suggest__input-row">
-                                    <div class="suggest__input-wrap">
-                                        <input type="text" name="SECOND_NAME" class="suggest__input-text" placeholder="Фамилия">
+                            </div>
+                            <div class="personal__row personal__row--hidden" data-row="pass">
+                                <div class="personal__row-center">
+                                    <div class="ot-form__control personal__input-row">
+                                        <input type="password" name="PASSWORD" class="ot-form__input-text personal__input" placeholder="Новый пароль">
                                     </div>
-                                    <div class="suggest__input-wrap">
-                                        <input type="text" name="EMAIL" class="suggest__input-text" placeholder="E-mail">
+                                    <div class="ot-form__control personal__input-row">
+                                        <input type="password" name="PASSWORD_REPEAT" class="ot-form__input-text personal__input" placeholder="Повторите пароль">
+                                    </div>
+                                    <div class="ot-form__control personal__input-row">
+                                        <button type="button" class="btn red-btn">Ок</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="suggest__data-row">
-                                <div class="suggest__data-title">Выберите рубруку</div>
-                                <div class="suggest__input-wrap suggest__input-wrap--select js-select">
-                                    <select name="HEADING" id="" class="suggest__select">
-                                        <option value="">Новости</option>
-                                        <option value="">Статьи</option>
-                                        <option value="">Обзоры</option>
-                                    </select>
+                        </div>
+                        <div class="personal__row-cluster">
+                            <div class="personal__row">
+                                <div class="personal__row-title">E-mail</div>
+                                <div class="personal__row-middle">black****@pazan.ru</div>
+                                <div class="personal__row-end">
+                                    <a href="#" class="personal__link-btn" data-row-btn="email">Изменить</a>
                                 </div>
                             </div>
-                            <div class="suggest__data-row">
-                                <div class="suggest__data-title suggest__data-title--imaged-title">
-                                    <div class="suggest__title-image">
-                                        <img src="images/svg/icons/imageMiniature.svg" class="img-fluid" alt="">
+                            <div class="personal__row personal__row--hidden" data-row="email">
+                                <div class="personal__row-center">
+                                    <div class="ot-form__control personal__input-row">
+                                        <input type="text" name="EMAIL" class="ot-form__input-text personal__input" placeholder="Новый E-mail">
                                     </div>
-                                    Загрузите фото
-                                </div>
-                                <div class="suggest__input-wrap suggest__input-wrap--file">
-                                    <input class="suggest__input-file" type="file" id="fileMulti" name="fileMulti" multiple accept="image/*,image/jpeg">
-                                    <label class="suggest__file-fake" for="fileMulti">ДВЕРЬ МНЕ ЗАГРУЗИ</label>
-                                </div>
-                                <div class="suggest__input-wrap suggest__input-wrap--photo-preview">
-                                    <div class="suggest__pictures" id="outputMulti"></div>
+                                    <div class="ot-form__control personal__input-row">
+                                        <button type="button" class="btn red-btn">Ок</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="suggest__data-row">
-                                <div class="suggest__data-title">Ваше сообщение</div>
-                                <div class="suggest__input-row suggest__input-row--textarea">
-                                    <textarea name="" class="suggest__textarea" placeholder="Напиши что-нибудь"></textarea>
+                        </div>
+                        <div class="personal__row-cluster">
+                            <div class="personal__row">
+                                <div class="personal__row-title">Имя</div>
+                                <div class="personal__row-middle">Евлампий</div>
+                                <div class="personal__row-end">
+                                    <a href="#" class="personal__link-btn" data-row-btn="name">Изменить</a>
                                 </div>
                             </div>
-                            <div class="suggest__button-row">
-                                <button class="btn auto-width-red-btn">отправить</button>
+                            <div class="personal__row personal__row--hidden" data-row="name">
+                                <div class="personal__row-center">
+                                    <div class="ot-form__control personal__input-row">
+                                        <input type="text" name="NAME" class="ot-form__input-text personal__input" placeholder="Новое имя">
+                                    </div>
+                                    <div class="ot-form__control personal__input-row">
+                                        <button type="button" class="btn red-btn">Ок</button>
+                                    </div>
+                                </div>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="personal__row-cluster">
+                            <div class="personal__row">
+                                <div class="personal__row-title">Фамилия</div>
+                                <div class="personal__row-middle">Жуев-Вкуснятин</div>
+                                <div class="personal__row-end">
+                                    <a href="#" class="personal__link-btn" data-row-btn="last">Изменить</a>
+                                </div>
+                            </div>
+                            <div class="personal__row personal__row--hidden" data-row="last">
+                                <div class="personal__row-center">
+                                    <div class="ot-form__control personal__input-row">
+                                        <input type="text" name="LAST_NAME" class="ot-form__input-text personal__input" placeholder="Новая фамилия">
+                                    </div>
+                                    <div class="ot-form__control personal__input-row">
+                                        <button type="button" class="btn red-btn">Ок</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personal__row-cluster">
+                            <div class="personal__row">
+                                <div class="personal__row-title">Телефон</div>
+                                <div class="personal__row-middle">+7 (950) 900-41-11</div>
+                                <div class="personal__row-end">
+                                    <a href="#" class="personal__link-btn" data-row-btn="phone">Изменить</a>
+                                </div>
+                            </div>
+                            <div class="personal__row personal__row--hidden" data-row="phone">
+                                <div class="personal__row-center">
+                                    <div class="ot-form__control personal__input-row">
+                                        <input type="text" name="PHONE" class="ot-form__input-text personal__input" placeholder="Новый телефон">
+                                    </div>
+                                    <div class="ot-form__control personal__input-row">
+                                        <button type="button" class="btn red-btn">Ок</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personal__big-row">
+                            <button class="btn wide-red-btn personal__submit-btn">Сохранить</button>
+                        </div>
+                        <div class="personal__gray-row">
+                            <div class="personal__delete-text">
+                                Вы можете <a href="delete.html" class="personal__delete-link">удалить свой аккаунт</a>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </section>
 
