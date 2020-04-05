@@ -1,0 +1,28 @@
+.notfind-page {
+    background: url(../images/svg/404.svg)  0% 101% / 50% no-repeat;
+}
+
+.notfind-page__content {
+    max-width: 780px;
+    margin-left: auto;
+}
+
+.notfind-page__title {
+    font-family: $didact;
+    font-size: rem(438px);
+    line-height: rem(547px);
+    color: $border-another-gray;
+    font-weight: normal;
+    text-align: right;
+}
+
+.notfind-page__text {
+    text-align: right;
+    font-size: 36px;
+    margin-bottom: 200px;
+}
+
+.notfind-page__button {
+    margin-left: 39px;
+    font-size: 20px;
+}
