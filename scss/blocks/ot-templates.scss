@@ -63,3 +63,32 @@
         margin-bottom: 13px;
     }
 }
+
+.ot-table {
+    width: 100%;
+}
+
+.ot-table__th {
+    color: $white;
+    width: 14%;
+    height: 45px;
+    padding: 0 5px;
+    text-align: center;
+    border: 1px solid $black;
+    background-color: $black;
+    &--buses-small {
+        width: 26%;
+    }
+    &--buses-big {
+        width: 74%;
+    }
+}
+
+.ot-table__td {
+    text-align: center;
+    height: 56px;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0 5px;
+    border: 1px solid $black;
+}

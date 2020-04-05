@@ -1,0 +1,41 @@
+.transoprt__lists-wrap {
+    margin-bottom: 70px;
+}
+
+.transport__list {
+    margin-bottom: 35px;
+}
+
+.transport__title {
+    margin-bottom: 20px;
+}
+
+.transport__button {
+    display: flex;
+    align-items: center;
+    border: 1px solid $text-gray-more;
+    border-radius: 5px;
+    padding: 14px 17px 14px 21px;
+    margin-bottom: 20px;
+    transition: all .3s ease-out;
+    &:hover {
+        border: 1px solid $red;
+        .transport__download-icon {
+            color: $red;
+        }
+    }
+}
+
+.transport__document-icon {
+    width: 26px;
+    height: 36px;
+    margin-right: 14px;
+}
+
+.transport__download-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+    color: $text-gray-more;
+    transition: color .3s ease-out;
+}
