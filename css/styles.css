@@ -11939,3 +11939,27 @@ address {
 
 .privacy {
   padding-bottom: 130px; }
+
+.weather__page-title {
+  padding-top: 85px; }
+
+.weather__desktop {
+  border: 1px solid #E5E5E5;
+  background-color: #ffffff;
+  padding: 10px;
+  padding-bottom: 20px;
+  border-radius: 5px; }
+  @media screen and (max-width: 600px) {
+    .weather__desktop {
+      display: none; } }
+
+.weather__mobile {
+  display: none; }
+  @media screen and (max-width: 600px) {
+    .weather__mobile {
+      display: block; } }
+
+.weather__desc {
+  text-align: center;
+  max-width: 915px;
+  margin: 0 auto 50px auto; }
