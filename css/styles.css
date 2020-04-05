@@ -9068,7 +9068,7 @@ address {
   .btn.auto-width-red-btn {
     line-height: 49px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #FFFFFF;
     background-color: #F51212;
     width: 100%;
     padding: 0 10px;
@@ -9082,7 +9082,7 @@ address {
       text-transform: unset; }
   .btn.red-btn {
     line-height: 40px;
-    color: #ffffff;
+    color: #FFFFFF;
     background-color: #F51212;
     padding: 0 20px;
     font-weight: normal;
@@ -9094,7 +9094,7 @@ address {
   .btn.wide-red-btn {
     line-height: 48px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #FFFFFF;
     background-color: #F51212;
     padding: 0 40px;
     font-weight: normal;
@@ -9108,7 +9108,7 @@ address {
     line-height: 1.75rem;
     font-weight: normal;
     color: #242226;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     border: transparent;
     border-radius: 2px;
     padding: 0 0.8125rem;
@@ -9372,7 +9372,7 @@ address {
   position: absolute;
   top: 50px;
   left: 0;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-radius: 5px;
   padding: 1.0625rem 1.25rem;
   text-align: left;
@@ -9466,11 +9466,37 @@ address {
   line-height: 24px;
   margin-bottom: 13px; }
 
+.ot-wysiwyg img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 30px; }
+
+.ot-wysiwyg ul {
+  margin-bottom: 30px; }
+  .ot-wysiwyg ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 12px;
+    line-height: 24px; }
+    .ot-wysiwyg ul li::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      margin-right: 13px;
+      display: block;
+      border-radius: 50%;
+      background-color: #242226; }
+
 .ot-table {
   width: 100%; }
 
 .ot-table__th {
-  color: #ffffff;
+  color: #FFFFFF;
   width: 14%;
   height: 45px;
   padding: 0 5px;
@@ -9489,6 +9515,50 @@ address {
   line-height: 18px;
   padding: 0 5px;
   border: 1px solid #242226; }
+
+.ot-quote {
+  background-color: #F7F7F7;
+  padding: 30px;
+  padding-left: 115px;
+  position: relative;
+  margin-bottom: 30px; }
+  .ot-quote:before {
+    content: '';
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    display: block;
+    top: 30px;
+    left: 37px;
+    background: url(../images/svg/icons/quoteRed.svg) center center/contain no-repeat; }
+
+.ot-quote__title {
+  font-size: 22px;
+  font-family: "Yeseva One", "Comic Sans MS", "Monaco", cursive;
+  line-height: 25px;
+  margin-bottom: 25px; }
+
+.ot-quote__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.ot-quote__author-pic {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px; }
+
+.ot-quote__author-name {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Yeseva One", "Comic Sans MS", "Monaco", cursive; }
+
+.ot-quote__author-status {
+  font-size: 14px;
+  line-height: 18px; }
 
 .main-up {
   padding: 1.875rem 0; }
@@ -10590,6 +10660,9 @@ address {
     background-color: transparent;
     max-width: 13.125rem; }
 
+.comments__messages {
+  margin-bottom: 15px; }
+
 .comments__auth-title {
   font-family: "Yeseva One", "Comic Sans MS", "Monaco", cursive;
   font-size: 1.5rem;
@@ -11178,7 +11251,7 @@ address {
   padding-top: 0; }
 
 .reviews-detail__container {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   max-width: 1240px;
   padding: 2.5rem 1.875rem 1.875rem 1.875rem; }
 
@@ -11328,7 +11401,7 @@ address {
 
 .register__form {
   margin-left: auto;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   padding: 1.5625rem 1.9375rem 2.625rem 1.9375rem;
   max-width: 380px;
   border-radius: 5px; }
@@ -11340,7 +11413,7 @@ address {
     padding: 5px;
     font-size: 14px;
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     left: 50%;
     top: 70%;
     -webkit-transform: translateX(-50%);
@@ -11360,7 +11433,7 @@ address {
       transform: translateX(-50%) rotate(45deg);
       width: 8px;
       height: 8px;
-      background-color: #ffffff; }
+      background-color: #FFFFFF; }
 
 .register__form-title {
   margin-bottom: 1.875rem; }
@@ -11413,7 +11486,7 @@ address {
 
 .popup__form {
   position: relative;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);
   border-radius: 5px;
@@ -11507,7 +11580,7 @@ address {
   margin-bottom: 1.5625rem; }
 
 .search-head__input {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-radius: 5px;
   border: 1px solid #E5E5E5;
   height: 2.5rem;
@@ -11572,7 +11645,7 @@ address {
   transition: all .3s ease-out; }
   .square-pagination__nav.unactive, .square-pagination__nav:hover {
     background-color: #242226;
-    color: #ffffff; }
+    color: #FFFFFF; }
   .square-pagination__nav--first {
     margin-right: 23px; }
 
@@ -11616,7 +11689,7 @@ address {
   transition: all .3s ease-out; }
   .square-pagination__link.active, .square-pagination__link:hover {
     border: 1px solid #242226;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     color: #242226; }
 
 .suggest__container {
@@ -11630,7 +11703,7 @@ address {
   font-size: 18px; }
 
 .suggest__form-wrap {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   padding: 25px 0;
   border: 1px solid #E5E5E5;
   border-radius: 5px; }
@@ -11829,7 +11902,7 @@ address {
   max-width: 780px; }
 
 .personal__form {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border: 1px solid #E5E5E5;
   border-radius: 5px; }
 
@@ -11898,7 +11971,7 @@ address {
   max-width: 780px; }
 
 .delete-acc__form {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border: 1px solid #E5E5E5;
   border-radius: 5px;
   padding-bottom: 75px; }
@@ -11981,7 +12054,7 @@ address {
 
 .weather__desktop {
   border: 1px solid #E5E5E5;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   padding: 10px;
   padding-bottom: 20px;
   border-radius: 5px; }
@@ -12084,3 +12157,170 @@ address {
 .notfind-page__button {
   margin-left: 39px;
   font-size: 20px; }
+
+.articles {
+  padding-bottom: 139px; }
+
+.articles__cards {
+  margin-bottom: 40px; }
+
+.articles__card {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  display: block;
+  color: #FFFFFF;
+  margin-bottom: 20px; }
+  .articles__card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(0, 0, 0, 0)), color-stop(61.37%, rgba(0, 0, 0, 0.6)), to(black));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.6) 61.37%, black 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.6) 61.37%, black 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.6) 61.37%, black 100%); }
+  .articles__card:hover {
+    color: #FFFFFF; }
+  .articles__card--main::before {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(1.55%, #905130), to(rgba(144, 81, 48, 0)));
+    background: -webkit-linear-gradient(bottom, #905130 1.55%, rgba(144, 81, 48, 0) 100%);
+    background: -o-linear-gradient(bottom, #905130 1.55%, rgba(144, 81, 48, 0) 100%);
+    background: linear-gradient(0deg, #905130 1.55%, rgba(144, 81, 48, 0) 100%); }
+  .articles__card--hot {
+    text-align: center; }
+    .articles__card--hot::before {
+      background: rgba(0, 0, 0, 0.7); }
+
+.articles__card-title--big {
+  font-family: "Yeseva One", "Comic Sans MS", "Monaco", cursive;
+  max-width: 580px; }
+
+.articles__card-content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 1.875rem; }
+
+.articles__card-subtitle {
+  color: #F51212;
+  font-size: 24px;
+  line-height: 31px;
+  margin-bottom: 10px; }
+
+.articles__card-title {
+  font-weight: normal;
+  margin-bottom: 0.625rem; }
+
+.articles__card-text {
+  line-height: 24px; }
+  .articles__card-text--centered {
+    margin: 0 auto 30px;
+    max-width: 440px; }
+
+.articles__card-date {
+  margin-bottom: 13px;
+  color: #C0C0C0; }
+
+.articles__more-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.articles__more-articles.btn.records__more {
+  display: inline-block;
+  padding: 0 20px; }
+
+.article {
+  padding-top: 0; }
+
+.article__container {
+  background-color: #FFFFFF;
+  padding-top: 44px;
+  border: 1px solid #E5E5E5;
+  border-radius: 5px; }
+
+.article__small-container {
+  max-width: 780px;
+  margin: 0 auto; }
+  .article__small-container--top {
+    margin-bottom: 20px; }
+  .article__small-container--padding-bottom {
+    padding-bottom: 40px; }
+
+.article__content {
+  margin-bottom: 36px; }
+
+.article__date {
+  color: #C4C4C4;
+  margin-bottom: 16px; }
+
+.article__date-time {
+  color: #F51212; }
+
+.article__main-title {
+  font-family: "Yeseva One", "Comic Sans MS", "Monaco", cursive;
+  margin-bottom: 11px; }
+
+.article__tag-btn {
+  margin-right: 10px; }
+
+.articles__main-cover {
+  margin-bottom: 30px; }
+
+.article__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 12px 0;
+  margin-bottom: 35px;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5; }
+
+.article__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.article__author-pic {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px; }
+
+.article__author-name {
+  margin-right: 20px; }
+
+.article__post-time {
+  color: #C4C4C4; }
+
+.article__socials-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.article__after-title {
+  font-family: "Yeseva One", "Comic Sans MS", "Monaco", cursive;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 34px;
+  text-align: center; }
