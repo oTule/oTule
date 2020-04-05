@@ -9169,6 +9169,18 @@ address {
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background: #FFFFFF; }
+    .btn.shadowed-btn--iconed {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 0 17px; }
+      .btn.shadowed-btn--iconed .shadowed-btn__icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 15px; }
     .btn.shadowed-btn--color-red {
       color: #F51212; }
     .btn.shadowed-btn--arrow-down {
@@ -11963,3 +11975,61 @@ address {
   text-align: center;
   max-width: 915px;
   margin: 0 auto 50px auto; }
+
+.transport-buttons__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.transport-buttons__button {
+  margin-right: 20px; }
+  .transport-buttons__button:last-child {
+    margin-right: 0; }
+
+.transoprt__lists-wrap {
+  margin-bottom: 70px; }
+
+.transport__list {
+  margin-bottom: 35px; }
+
+.transport__title {
+  margin-bottom: 20px; }
+
+.transport__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #C0C0C0;
+  border-radius: 5px;
+  padding: 14px 17px 14px 21px;
+  margin-bottom: 20px;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out; }
+  .transport__button:hover {
+    border: 1px solid #F51212; }
+    .transport__button:hover .transport__download-icon {
+      color: #F51212; }
+
+.transport__document-icon {
+  width: 26px;
+  height: 36px;
+  margin-right: 14px; }
+
+.transport__download-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  color: #C0C0C0;
+  -webkit-transition: color .3s ease-out;
+  -o-transition: color .3s ease-out;
+  transition: color .3s ease-out; }
