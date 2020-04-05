@@ -9568,6 +9568,17 @@ address {
   height: 33.375rem;
   background: center center / cover no-repeat;
   color: #FFFFFF; }
+  .main-up__slide:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: -webkit-gradient(linear, left top, right top, from(black), color-stop(35%, rgba(0, 0, 0, 0)), color-stop(65%, rgba(0, 0, 0, 0)), to(black));
+    background: -webkit-linear-gradient(left, black 0%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 65%, black 100%);
+    background: -o-linear-gradient(left, black 0%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 65%, black 100%);
+    background: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 65%, black 100%); }
 
 .main-up__slide-title {
   position: absolute;
@@ -9587,9 +9598,10 @@ address {
   max-width: 21.875rem; }
 
 .main-up__content-date {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.875rem;
   font-family: "Didact Gothic", "Comic Sans MS", "Monaco", cursive;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  color: #EED035; }
 
 .main-up__content-title {
   margin-bottom: 1.25rem;
@@ -9754,7 +9766,6 @@ address {
   padding-bottom: 0; }
 
 .news-main {
-  border-bottom: 1px solid #C4C4C4;
   padding-bottom: 2.5rem; }
 
 .news-main__content {
@@ -9823,6 +9834,46 @@ address {
   font-family: "Yeseva One", "Comic Sans MS", "Monaco", cursive;
   font-weight: bold;
   color: #242226; }
+
+.main-about {
+  padding-top: 100px;
+  padding-bottom: 65px; }
+
+.main-about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  position: relative; }
+  .main-about__container:before {
+    content: '';
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    right: -300px;
+    bottom: -90px;
+    display: block;
+    background: url(../images/svg/icons/theT.svg) center center/contain no-repeat; }
+
+.main-about__content {
+  width: 57%; }
+
+.main-about__title {
+  font-family: "Yeseva One", "Comic Sans MS", "Monaco", cursive;
+  font-size: 64px;
+  line-height: 74px;
+  margin-bottom: 36px; }
+
+.main-about__text {
+  line-height: 24px; }
+  .main-about__text p {
+    margin-bottom: 35px; }
+
+.announce-main__container {
+  padding-bottom: 60px;
+  border-bottom: 1px solid #E5E5E5; }
 
 .redaction-main__news {
   margin-bottom: 2.9375rem; }

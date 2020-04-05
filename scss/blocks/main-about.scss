@@ -1,0 +1,38 @@
+.main-about {
+    padding-top: 100px;
+    padding-bottom: 65px;
+}
+
+.main-about__container {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    &:before {
+        content: '';
+        width: 400px;
+        height: 200px;
+        position: absolute;
+        right: -300px;
+        bottom: -90px;
+        display: block;
+        background: url(../images/svg/icons/theT.svg) center center / contain no-repeat;
+    }
+}
+
+.main-about__content {
+    width: 57%;
+}
+
+.main-about__title {
+    font-family: $yeseva;
+    font-size: 64px;
+    line-height: 74px;
+    margin-bottom: 36px;
+}
+
+.main-about__text {
+    line-height: 24px;
+    p {
+        margin-bottom: 35px;
+    }
+}
