@@ -10987,6 +10987,17 @@ address {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
+.announcements-empty__container {
+  text-align: center;
+  padding-bottom: 7.1875rem; }
+
+.announcements-empty__title {
+  margin-bottom: 3.4375rem; }
+
+.announcements-empty__picture {
+  max-width: 34.4375rem;
+  margin: 0 auto; }
+
 .reviews-item {
   display: block;
   margin-bottom: 2.5rem; }
